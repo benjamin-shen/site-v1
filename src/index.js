@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "materialize-css/dist/css/materialize.min.css";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
+import Contact from "./Contact";
 import * as serviceWorker from "./serviceWorker";
 const firebase = require("firebase/app");
 
@@ -19,7 +21,7 @@ firebase.initializeApp(config);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Contact />
   </React.StrictMode>,
   document.getElementById("root")
 );
