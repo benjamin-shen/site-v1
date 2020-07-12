@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts build && firebase serv --only hosting",
     "deploy": "react-scripts build && firebase deploy",
     "integrity": "yarn install --check-files",
     "eject": "react-scripts eject"
