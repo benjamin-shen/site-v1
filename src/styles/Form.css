@@ -1,0 +1,21 @@
+textarea {
+  padding: 7px 6px;
+  width: 350px;
+  height: 150px;
+  font-size: 1.2em;
+}
+button {
+  margin-top: 20px;
+}
+label {
+  text-align: left;
+}
+#email {
+  padding: 0px 5px;
+}
+#email-label {
+  padding: 0px 4px;
+}
+#contact-form-submit {
+  display: none;
+}

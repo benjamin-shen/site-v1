@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles/Form.css";
 
 class Form extends Component {
   componentDidMount() {
@@ -14,22 +15,20 @@ class Form extends Component {
   }
   render() {
     return (
-      <div className="Form" ref={(el) => (this.div = el)}>
+      <div className="form" ref={(el) => (this.div = el)}>
         <form
           action="https://formspree.io/xpzyoard"
           method="POST"
           id="contact-form"
         >
+          <div class="input-field">
+            <input id="email" type="email" class="validate" name="_replyto" />
+            <label id="email-label" for="email">
+              Your email address
+            </label>
+          </div>
           <label>
-            Email:
-            <br />
-            <input type="text" name="_replyto" placeholder="your@email.here" />
-          </label>
-          <br />
-          <label>
-            Message:
-            <br />
-            <textarea name="message" required />
+            <textarea name="message" placeholder="Your message" required />
           </label>
           <br />
           <button

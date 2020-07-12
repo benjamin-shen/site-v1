@@ -1,0 +1,16 @@
+.container {
+  height: 100%;
+  max-width: 500px;
+}
+.container h1 {
+  font-size: 24px;
+  color: #ba3b46;
+  margin: 0px 0px 50px 0px;
+}
+.container h2 {
+  color: #89ce94;
+}
+
+.container #logo {
+  margin: 0px;
+}
