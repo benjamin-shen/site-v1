@@ -10,7 +10,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1f1300;
 }
 
 code {
@@ -20,10 +19,4 @@ code {
 
 #root {
   height: 100%;
-}
-
-.btn {
-  background-color: #58ccc0;
-  color: #004d40;
-  font-weight: bold;
 }

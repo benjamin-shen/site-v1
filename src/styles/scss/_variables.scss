@@ -1,0 +1,17 @@
+// ==========================================================================
+// Custom variables
+// ==========================================================================
+
+$custom-blue: #26547c !default;
+$custom-purple: #8b80f9 !default;
+$custom-green: #89ce94 !default;
+$custom-red: #ba3b46 !default;
+$custom-orange: #f2a359 !default;
+
+:export {
+  blue: $custom-blue;
+  purple: $custom-purple;
+  green: $custom-green;
+  red: $custom-red;
+  orange: $custom-orange;
+}

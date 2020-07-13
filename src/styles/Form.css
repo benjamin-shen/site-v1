@@ -10,12 +10,6 @@ button {
 label {
   text-align: left;
 }
-#email {
-  padding: 0px 5px;
-}
-#email-label {
-  padding: 0px 4px;
-}
 #contact-form-submit {
   display: none;
 }
