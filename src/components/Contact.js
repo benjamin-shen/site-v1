@@ -10,7 +10,7 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact">
-        <h1 className="flow-text light-blue-text lighten-5">Contact Me</h1>
+        <h2 className="lighten-5">Contact Me</h2>
         <Form />
       </div>
     );

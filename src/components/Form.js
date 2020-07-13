@@ -5,12 +5,7 @@ class Form extends Component {
   componentDidMount() {
     const callback = document.createElement("script");
     callback.innerHTML =
-      'function onSubmit(token) {\
-        return new Promise(function (resolve, reject) {\
-          document.getElementById("contact-form-submit").click();\
-          resolve();\
-        });\
-      }';
+      'function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}';
     this.div.appendChild(callback);
   }
   render() {
@@ -21,9 +16,14 @@ class Form extends Component {
           method="POST"
           id="contact-form"
         >
-          <div class="input-field">
-            <input id="email" type="email" class="validate" name="_replyto" />
-            <label id="email-label" for="email">
+          <div className="input-field">
+            <input
+              id="email"
+              type="email"
+              className="validate"
+              name="_replyto"
+            />
+            <label id="email-label" htmlFor="email">
               Your email address
             </label>
           </div>
@@ -33,7 +33,7 @@ class Form extends Component {
           <br />
           <button
             type="submit"
-            className="waves-effect waves-light btn-large z-depth-2 light-blue g-recaptcha"
+            className="waves-effect btn-large z-depth-2 transparent black-text g-recaptcha"
             data-sitekey="6Lf1HrAZAAAAAMz2s3423lVlKRuG3_QRKZIVf9rZ"
             data-callback="onSubmit"
           >
