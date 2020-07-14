@@ -20,7 +20,7 @@ class PageNotFound extends Component {
           >
             Go Back
           </button>
-          <Link to="/">
+          <Link to="/home">
             <button className="btn waves-effect z-depth-2 right transparent black-text">
               Home
             </button>
