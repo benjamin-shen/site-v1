@@ -15,7 +15,7 @@ class Contact extends Component {
     return (
       <div id="contact">
         <Nav />
-        <div class="valign-wrapper">
+        <div className="valign-wrapper">
           <div id="form" className="z-depth-1">
             <h1>Contact Me</h1>
             <p>{email}</p>

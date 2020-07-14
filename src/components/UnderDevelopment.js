@@ -6,9 +6,9 @@ import logo from "../images/logo410x410.png";
 class UnderDevelopment extends Component {
   render() {
     return (
-      <div className="container valign-wrapper">
-        <div className="center-align">
-          <h1>This page is under development.</h1>
+      <div id="underDevelopment" className="valign-wrapper">
+        <div id="notice" className="center-align">
+          <h1>This site is under development.</h1>
           <img
             id="logo"
             className="hoverable responsive-img circle center"
