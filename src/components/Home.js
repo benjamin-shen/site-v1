@@ -1,15 +1,18 @@
-import React, { Component, Nav } from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
 import "../styles/Home.css";
+import Nav from "./Nav";
 import logo from "../images/logo410x410.png";
+
+const style = { border: "1px solid red" };
+const Image = () => {
+  return <img id="logo" className="circle" src={logo} alt="Ben Shen" />;
+};
 
 class Home extends Component {
   render() {
     return (
-      <div className="container valign-wrapper">
-        <div className="center-align">
-          <h1>Home</h1>
-        </div>
+      <div id="home">
+        <Nav />
       </div>
     );
   }

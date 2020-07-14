@@ -6,7 +6,9 @@
   font-size: 28px;
   margin: 0px 0px 20px 0px;
 }
-
 .container #logo {
   margin: 0px;
+}
+.container button {
+  margin: 10px;
 }

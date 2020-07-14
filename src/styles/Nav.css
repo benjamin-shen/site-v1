@@ -1,0 +1,23 @@
+#header {
+  padding: 40px 10px 0px 10px;
+}
+#header #nav {
+  height: 100%;
+  width: 95%;
+  padding: 20px;
+  margin: 0px auto;
+  border-bottom: 2px solid black;
+}
+#header h1 {
+  margin: 0px;
+  line-height: 100%;
+  font-size: 3em;
+}
+#nav-mobile {
+  margin: 10px 0px 0px 20px;
+}
+#nav-mobile li {
+  padding: 0px 0px 0px 30px;
+  font-size: 1.5em;
+  display: inline-block;
+}
