@@ -1,44 +1,20 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "../styles/Footer.css";
+import github from "../images/github32.png";
+import linkedin from "../images/linkedin32.png";
 
-// add active class
-
-class Footer extends Component {
-  render() {
-    return (
-      <footer id="footer" className="center-align">
-        <div className="page-footer">
-          <div className="container">
-            <div className="row">
-              <div className="col l4 m12 s12">
-                <ul>
-                  <li>
-                    <a
-                      href="https://github.com/benjamin-shen"
-                      target="_blank"
-                      className="white-text"
-                    >
-                      <h6>Github: benjamin-shen</h6>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/benjaminfshen/"
-                      target="_blank"
-                      className="white-text"
-                    >
-                      <h6>LinkedIn: benjaminfshen</h6>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col l4 m12 s12">
-                <h5>Thank you for visiting!</h5>
-              </div>
-              <div className="col l4 m12 s12">
+const Footer = () => {
+  return (
+    <footer id="footer">
+      <div className="page-footer">
+        <div className="container primary-color-lighten">
+          <div className="row valign-wrapper">
+            <div className="col l4 m12 s12 center-on-med-and-down">
+              <div className="left-section">
+                <h5 className="white-text">Support Me</h5>
                 <a
                   id="bmc"
+                  rel="noopener noreferrer"
                   target="_blank"
                   href="https://www.buymeacoffee.com/benshen"
                 >
@@ -47,7 +23,7 @@ class Footer extends Component {
                       <img
                         id="bmc-img"
                         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                        alt="Buy me bubble tea"
+                        alt="Buy me bubble tea!"
                       />
                       <span id="bmc-text">Buy me bubble tea</span>
                     </div>
@@ -55,14 +31,49 @@ class Footer extends Component {
                 </a>
               </div>
             </div>
-          </div>
-          <div className="footer-copyright">
-            <div className="container">© 2020 Benjamin Shen</div>
+            <div className="col l4 m12 s12 center">
+              <div className="hide-on-med-and-down">
+                <h5>Stay Healthy!</h5>
+                <i className="material-icons">favorite_outline</i>
+              </div>
+            </div>
+            <div className="col l4 m12 s12 center-on-med-and-down">
+              <div className="right-section">
+                <h5 className="white-text">Visit My Socials</h5>
+                <ul>
+                  <li>
+                    <a
+                      href="https://github.com/benjamin-shen"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="white-text"
+                    >
+                      <img src={github} alt="Github" />
+                      <span className="social-media">benjamin-shen</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/benjaminfshen/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="white-text"
+                    >
+                      <img src={linkedin} alt="LinkedIn" />
+                      <span className="social-media">benjaminshen</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    );
-  }
-}
+        <div className="footer-copyright center-align">
+          <div className="container">© 2020 Benjamin Shen</div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

@@ -9,28 +9,45 @@
   margin: 0;
   height: 100%;
 }
-#footer ul {
-  margin: 8px 0;
+#footer .col-content {
+  margin: 0 auto;
 }
-#footer h6 {
-  margin: 4px;
+#footer h5 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#footer ul {
+  margin: 3px 0px;
+}
+#footer li {
+  padding: 2.125px 0;
+}
+#footer img {
+  width: 22px;
+  vertical-align: middle;
+}
+#footer .social-media {
+  vertical-align: middle;
+  font-size: 1em;
+  margin-left: 5px;
 }
 #footer #bmc-img {
-  width: 16px;
+  width: 12px;
   margin: 4px;
 }
 #footer #bmc-text {
-  font-size: 26px;
+  font-size: 22px;
   font-family: "Cookie", cursive;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
   text-transform: none;
   margin: 3px;
-  line-height: 1.05em;
+  line-height: 18px;
 }
 #footer button {
+  height: 44px;
   white-space: nowrap;
-  padding: 0 8px;
-  margin: 10px;
+  margin: 8px 0;
   vertical-align: auto;
   background-color: #0064c2;
 }
@@ -41,4 +58,18 @@
   -ms-transition: color 1s;
   -o-transition: color 1s;
   transition: color 1s;
+}
+#footer .left-section {
+  float: right;
+}
+
+@media screen and (max-width: 1010px) {
+  #footer .left-section {
+    float: none;
+  }
+}
+@media screen and (max-width: 250px) {
+  #footer #bmc-img {
+    display: none;
+  }
 }

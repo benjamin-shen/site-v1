@@ -11,7 +11,10 @@ class Header extends Component {
         <div id="nav" className="nav-wrapper">
           <h1 className="left center-on-small-only">
             <NavLink exact to="/home" activeClassName="is-active">
-              Ben<span className="hide-on-small-and-down">jamin</span> Shen
+              <div className="hide-on-small-and-down show-on-med-and-up">
+                Benjamin Shen
+              </div>
+              <div className="hide-on-med-and-up show-on-small">Ben Shen</div>
             </NavLink>
           </h1>
           <ul id="nav-mobile" className="right center-on-small-only">
