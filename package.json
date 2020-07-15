@@ -7,7 +7,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.16.0",
-    "materialize-css": "^1.0.0-rc.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -17,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts build && firebase serv --only hosting",
+    "test": "react-scripts build && firebase serve --only hosting",
     "deploy": "react-scripts build && firebase deploy",
     "integrity": "yarn install --check-files",
     "eject": "react-scripts eject"
