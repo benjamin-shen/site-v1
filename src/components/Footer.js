@@ -37,9 +37,13 @@ class Footer extends Component {
                 <h5>Thank you for visiting!</h5>
               </div>
               <div className="col l4 m12 s12">
-                <a target="_blank" href="https://www.buymeacoffee.com/benshen">
-                  <button class="btn z-depth-2">
-                    <div id="bmc" className="valign-wrapper">
+                <a
+                  id="bmc"
+                  target="_blank"
+                  href="https://www.buymeacoffee.com/benshen"
+                >
+                  <button className="btn z-depth-2">
+                    <div className="valign-wrapper">
                       <img
                         id="bmc-img"
                         src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
@@ -52,8 +56,8 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div class="footer-copyright">
-            <div class="container">© 2020 Benjamin Shen</div>
+          <div className="footer-copyright">
+            <div className="container">© 2020 Benjamin Shen</div>
           </div>
         </div>
       </footer>

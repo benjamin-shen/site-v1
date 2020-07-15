@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Header.css";
 
 // add active class
@@ -10,21 +10,31 @@ class Header extends Component {
       <header id="header" className="valign-wrapper center-align">
         <div id="nav" className="nav-wrapper">
           <h1 className="left center-on-small-only">
-            <Link to="/">
+            <NavLink exact to="/home" activeClassName="is-active">
               Ben<span className="hide-on-small-and-down">jamin</span> Shen
-            </Link>
+            </NavLink>
           </h1>
           <ul id="nav-mobile" className="right center-on-small-only">
             <li>
-              <Link to="/about">&nbsp;About&nbsp;</Link>
+              <div className="space"></div>
+              <NavLink exact to="/about" activeClassName="is-active">
+                About
+              </NavLink>
+              <div className="space"></div>
             </li>
-            <li className="space hide-on-small-and-down"></li>
             <li>
-              <Link to="/projects">&nbsp;Projects&nbsp;</Link>
+              <div className="space"></div>
+              <NavLink exact to="/projects" activeClassName="is-active">
+                Projects
+              </NavLink>
+              <div className="space"></div>
             </li>
-            <li className="space hide-on-small-and-down"></li>
             <li>
-              <Link to="/contact">&nbsp;Contact&nbsp;</Link>
+              <div className="space hide-on-small-and-down"></div>
+              <NavLink exact to="/contact" activeClassName="is-active">
+                Contact
+              </NavLink>
+              <div className="space hide-on-small-and-down"></div>
             </li>
           </ul>
         </div>

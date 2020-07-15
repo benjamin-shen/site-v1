@@ -32,4 +32,13 @@
   padding: 0 8px;
   margin: 10px;
   vertical-align: auto;
+  background-color: #0064c2;
+}
+#footer #bmc :hover {
+  background-color: #52d1dc;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
 }

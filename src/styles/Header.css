@@ -1,25 +1,42 @@
 #header {
   padding: 40px 10px 0 10px;
 }
-#header #nav {
-  height: 100%;
-  width: 95%;
-  padding: 20px;
-  margin: 0 auto;
-  border-bottom: 2px solid black;
-}
 #header h1 {
   margin: 0;
+  padding-left: 10px;
   line-height: 100%;
   font-size: 3em;
 }
-#nav-mobile {
-  margin: 10px 0 0 20px;
+#header #nav {
+  height: 100%;
+  width: 95%;
+  padding: 20px 20px 0 20px;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+#header a {
+  color: #0a090c;
+}
+#header :hover {
+  color: #26547c;
 }
 #nav-mobile li {
   font-size: 1.5em;
+  margin: 0px 10px;
   display: inline-block;
 }
+#header .is-active {
+  color: #0064c2;
+}
 #nav-mobile .space {
-  margin: 0px 20px;
+  margin: 0px 10px;
+}
+@media screen and (max-width: 652px) {
+  #header {
+    margin: 0;
+    padding: 0;
+  }
+  #nav-mobile {
+    margin-bottom: 10px;
+  }
 }
