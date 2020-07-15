@@ -1,7 +1,20 @@
 import React, { Component } from "react";
 import "../styles/Form.css";
 
+const dev = false;
+
+const siteKey = dev
+  ? "6LcVWLAZAAAAABwKZGH_pswPDbb9foSrEnmOCelv"
+  : "6Lf1HrAZAAAAAMz2s3423lVlKRuG3_QRKZIVf9rZ";
+
 class Form extends Component {
+  componentDidMount() {
+    if (typeof window.grecaptcha !== "undefined" && window.grecaptcha) {
+      window.grecaptcha.ready(function () {
+        window.location.reload(false);
+      });
+    }
+  }
   render() {
     return (
       <div className="form">
@@ -28,7 +41,7 @@ class Form extends Component {
           <button
             type="submit"
             className="waves-effect btn-large z-depth-2 transparent black-text g-recaptcha"
-            data-sitekey="6Lf1HrAZAAAAAMz2s3423lVlKRuG3_QRKZIVf9rZ"
+            data-sitekey={siteKey}
             data-callback="onSubmit"
             data-action="submit"
           >
