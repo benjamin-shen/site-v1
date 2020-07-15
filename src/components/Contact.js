@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Nav from "./Nav";
+import Header from "./Header";
 import Form from "./Form";
+import Footer from "./Footer";
 import "../styles/Contact.css";
 
 const emailText = "benjaminshen22@gmail.com";
@@ -11,8 +12,8 @@ class Contact extends Component {
   render() {
     return (
       <div id="contact">
-        <Nav />
-        <div className="valign-wrapper">
+        <Header />
+        <main className="valign-wrapper">
           <div id="form" className="z-depth-1">
             <h1>Contact Me</h1>
             <p>
@@ -23,7 +24,8 @@ class Contact extends Component {
             <p>{phone}</p>
             <Form />
           </div>
-        </div>
+        </main>
+        <Footer />
       </div>
     );
   }

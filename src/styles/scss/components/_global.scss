@@ -370,6 +370,7 @@ ul.staggered-list li {
 .center-on-small-only {
   @media #{$small-and-down} {
     text-align: center;
+    width: 100%;
   }
 }
 

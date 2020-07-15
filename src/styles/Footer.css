@@ -1,0 +1,35 @@
+#footer .page-footer {
+  width: 100%;
+  padding: 0;
+}
+#footer .footer-copyright {
+  padding: 0;
+}
+#footer .row {
+  margin: 0;
+  height: 100%;
+}
+#footer ul {
+  margin: 8px 0;
+}
+#footer h6 {
+  margin: 4px;
+}
+#footer #bmc-img {
+  width: 16px;
+  margin: 4px;
+}
+#footer #bmc-text {
+  font-size: 26px;
+  font-family: "Cookie", cursive;
+  letter-spacing: 0.6px;
+  text-transform: none;
+  margin: 3px;
+  line-height: 1.05em;
+}
+#footer button {
+  white-space: nowrap;
+  padding: 0 8px;
+  margin: 10px;
+  vertical-align: auto;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../styles/Home.css";
-import Nav from "./Nav";
+import Header from "./Header";
+import Footer from "./Footer";
 import logo from "../images/logo410x410.png";
 
 const style = { border: "1px solid red" };
@@ -12,7 +13,9 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
-        <Nav />
+        <Header />
+        <main></main>
+        <Footer />
       </div>
     );
   }
