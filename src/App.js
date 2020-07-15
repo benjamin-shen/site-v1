@@ -10,6 +10,12 @@ import PageNotFound from "./components/PageNotFound";
 import UnderDevelopment from "./components/UnderDevelopment";
 
 class App extends Component {
+  componentDidMount() {
+    const callback = document.createElement("script");
+    callback.innerHTML =
+      'function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}';
+    document.body.appendChild(callback);
+  }
   render() {
     return (
       <Router>

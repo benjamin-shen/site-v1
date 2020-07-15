@@ -3,14 +3,18 @@ import "../styles/Form.css";
 
 class Form extends Component {
   componentDidMount() {
-    const callback = document.createElement("script");
-    callback.innerHTML =
-      'function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}';
-    this.div.appendChild(callback);
+    const script = document.createElement("script");
+    script.id = "recaptcha-script";
+    script.src = "https://www.google.com/recaptcha/api.js";
+    document.body.appendChild(script);
+  }
+  componentWillUnmount() {
+    const script = document.getElementById("recaptcha-script");
+    document.body.removeChild(script);
   }
   render() {
     return (
-      <div className="form" ref={(el) => (this.div = el)}>
+      <div className="form">
         <form
           action="https://formspree.io/xpzyoard"
           method="POST"
@@ -40,7 +44,8 @@ class Form extends Component {
             Send
           </button>
           <br />
-          <input id="contact-form-submit" type="submit" />
+          <input type="text" className="hide" name="_gotcha" />
+          <input id="contact-form-submit" type="submit" className="hide" />
         </form>
       </div>
     );

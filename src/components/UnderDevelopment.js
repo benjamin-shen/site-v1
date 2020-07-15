@@ -16,11 +16,12 @@ class UnderDevelopment extends Component {
             alt="Ben Shen"
           />
           <br />
-          <Link to="/home">
-            <button className="btn waves-effect z-depth-2 transparent black-text">
-              Home
-            </button>
-          </Link>
+          <button
+            className="btn waves-effect z-depth-2 transparent black-text"
+            onClick={() => this.props.history.goBack()}
+          >
+            Go Back
+          </button>
         </div>
       </div>
     );
