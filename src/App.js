@@ -15,6 +15,10 @@ class App extends Component {
     callback.innerHTML =
       'function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}';
     document.body.appendChild(callback);
+
+    const script = document.createElement("script");
+    script.src = "https://www.google.com/recaptcha/api.js";
+    document.body.appendChild(script);
   }
   render() {
     return (
