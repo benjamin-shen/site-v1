@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Project.css";
 import "../styles/Home.css";
 import Header from "./Header";
@@ -54,10 +55,27 @@ const HomeText = () => {
         >
           Computer Science
         </a>{" "}
-        with interests in Game Design and Mechanical Engineering. I value human
-        connections and I'm driven by people.
+        with interests in{" "}
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.cs.cornell.edu/undergrad/minors/game-design-minor"
+        >
+          Game Design
+        </a>
+        . I value friendships and I'm driven by people.{" "}
+        <em>
+          See my <Link to="/about">About</Link> page for more about me.
+        </em>
       </p>
-      <p>Check out some of my project topics here!</p>
+      <p>
+        Check out some of my project topics below! Click the cards for more
+        info.{" "}
+        <em>
+          Check out my <Link to="projects">Projects</Link> page for a larger
+          collection of my work.
+        </em>
+      </p>
     </div>
   );
 };
@@ -110,14 +128,14 @@ const Home = () => {
                 </p>
                 <ul>
                   <li>
-                    <strong>Dbot</strong>, a bot for our group chat on Groupme.{" "}
+                    <strong>Dbot</strong>, a bot for our group chat on Groupme.
                     <br />
                     <em>Built with Python.</em>
                   </li>
                   <li>
-                    <strong>GLOZZ Personality Quiz</strong>, a short
-                    multiple-choice quiz to see which members of the group you
-                    are most similar to. <br />
+                    <strong>GLOZZ Personality Quiz</strong>, a multiple-choice
+                    quiz to see which members of the group you are most similar
+                    to. <br />
                     <em>Built with Python and JavaScript.</em>
                   </li>
                 </ul>

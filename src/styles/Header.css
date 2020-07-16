@@ -22,14 +22,14 @@
 }
 #nav-mobile li {
   font-size: 1.5em;
-  margin: 0px 10px;
+  margin: 0 10px;
   display: inline-block;
 }
 #header .is-active {
   color: #0064c2;
 }
 #nav-mobile .space {
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 @media screen and (max-width: 652px) {
   #header {
@@ -38,5 +38,29 @@
   }
   #nav-mobile {
     margin-bottom: 10px;
+  }
+  #nav-mobile li {
+    margin: 0 40px;
+  }
+}
+@media screen and (max-width: 509px) {
+  #nav-mobile li {
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 447px) {
+  #nav-mobile li {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 383px) {
+  #nav-mobile li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 383px) {
+  #nav-mobile li {
+    margin: 0;
+    display: block;
   }
 }
