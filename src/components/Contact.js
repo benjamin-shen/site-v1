@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import "../styles/Form.css";
-import "../styles/Contact.css";
+import { Helmet } from "react-helmet";
 import Header from "./Header";
 import Footer from "./Footer";
+import "../styles/Form.css";
+import "../styles/Contact.css";
 
 const dev = false;
 
@@ -62,6 +63,12 @@ const Contact = () => {
   }, []);
   return (
     <div id="contact">
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Contact Benjamin Shen." />
+        <meta property="og:title" content="Benjamin Shen - Contact" />
+        <meta property="og:description" content="Contact Benjamin Shen." />
+      </Helmet>
       <Header />
       <main className="valign-wrapper">
         <div id="form" className="z-depth-1">

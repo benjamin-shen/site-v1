@@ -3,3 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+#about h2 {
+  font-size: 2.2em;
+}
+#about p {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "../styles/Project.css";
 import "../styles/Home.css";
 import Header from "./Header";
@@ -39,31 +40,9 @@ const HomeText = () => {
     <div>
       <h2>Hey, I'm Ben!</h2>
       <p>
-        I'm a rising junior at{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://www.cornell.edu"
-        >
-          Cornell University
-        </a>{" "}
-        majoring in{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://www.cs.cornell.edu"
-        >
-          Computer Science
-        </a>{" "}
-        with interests in{" "}
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://www.cs.cornell.edu/undergrad/minors/game-design-minor"
-        >
-          Game Design
-        </a>
-        . I value friendships and I'm driven by people.{" "}
+        I'm a college student who's interested in web, app, and game
+        development. I also have experience in CRM and software development. I
+        value friendships and I'm driven by people.{" "}
         <em>
           See my <Link to="/about">About</Link> page for more about me.
         </em>
@@ -86,6 +65,15 @@ const Home = () => {
   }, []);
   return (
     <div id="home">
+      <Helmet>
+        <title>Benjamin Shen</title>
+        <meta name="description" content="Benjamin Shen's personal website." />
+        <meta property="og:title" content="Benjamin Shen - Home" />
+        <meta
+          property="og:description"
+          content="Benjamin Shen's personal website"
+        />
+      </Helmet>
       <Header />
       <main className="container">
         <HomeText />
