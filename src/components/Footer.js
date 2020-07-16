@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import bbt from "../images/bbt160.png";
 import github from "../images/github32.png";
 import linkedin from "../images/linkedin32.png";
 
@@ -20,11 +21,7 @@ const Footer = () => {
                 >
                   <button className="btn z-depth-2">
                     <div className="valign-wrapper">
-                      <img
-                        id="bmc-img"
-                        src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
-                        alt="Buy me bubble tea!"
-                      />
+                      <img id="bmc-img" src={bbt} alt="Buy me bubble tea!" />
                       <span id="bmc-text">Buy me bubble tea</span>
                     </div>
                   </button>
