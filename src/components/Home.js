@@ -4,8 +4,8 @@ import "../styles/Project.css";
 import "../styles/Home.css";
 import Header from "./Header";
 import Footer from "./Footer";
-import glozz from "../images/glozz.jpg";
-import flux from "../images/flux.png";
+import glozz from "../assets/images/glozz.jpg";
+import flux from "../assets/images/flux.png";
 
 const Project = ({ img, title, description, info }) => {
   return (
@@ -172,10 +172,10 @@ const Home = () => {
                   a back-end developer for Flux.
                 </p>
                 <p>
-                  I've gained a lot about app development experience from being
-                  the team. I worked primarily on the back end for the Flux
-                  mobile apps, and the full stack for the Flux Fitness web app.
-                  Repositories I've contributed to include:
+                  I've learned a lot about app development from being the team.
+                  I worked primarily on the back end for the Flux mobile apps,
+                  and the full stack for the Flux Fitness web app. Repositories
+                  I've contributed to include:
                 </p>
                 <ul>
                   <li>
