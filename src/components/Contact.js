@@ -72,7 +72,7 @@ const Contact = () => {
       <Header />
       <main className="valign-wrapper">
         <div id="form" className="z-depth-1">
-          <h1>Contact Me</h1>
+          <h2>Contact Me</h2>
           <p>
             <a href={"mailto:" + emailAddress + "?subject=Website%20Contact"}>
               {emailText}

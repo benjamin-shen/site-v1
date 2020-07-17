@@ -14,7 +14,7 @@ const Project = ({ img, title, description, info }) => {
       <div className="card medium">
         <div className="card-image waves-effect waves-block waves-light">
           {img && (
-            <img className="activator" src={img} alt={img + " Project Image"} />
+            <img className="activator" src={img} alt={title + " Card Image"} />
           )}
         </div>
         <div className="card-content">
