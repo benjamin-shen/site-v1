@@ -6,7 +6,7 @@ import resume from "../assets/Benjamin Shen.pdf";
 
 const Resume = () => {
   useEffect(() => {
-    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div id="resume">

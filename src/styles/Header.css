@@ -1,16 +1,14 @@
 #header {
-  padding: 40px 10px 0 10px;
+  padding: 50px 10px 0 10px;
 }
 #header h1 {
-  margin: 0;
-  padding-left: 10px;
-  line-height: 100%;
+  margin: 0 0 10px 10px;
   font-size: 3em;
 }
 #header #nav {
   height: 100%;
   width: 95%;
-  padding: 20px 20px 0 20px;
+  padding: 5px 20px 0 20px;
   margin: 0 auto;
   border-bottom: 2px solid black;
 }
@@ -20,8 +18,11 @@
 #header :hover {
   color: #26547c;
 }
+#nav-mobile {
+  margin: 10px 0;
+}
 #nav-mobile li {
-  font-size: 1.5em;
+  font-size: 26px;
   margin: 0 10px;
   display: inline-block;
 }
@@ -31,34 +32,33 @@
 #nav-mobile .space {
   margin: 0 10px;
 }
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 717px) {
   #header {
-    margin: 0;
     padding: 0;
   }
+  #header h1 {
+    width: 100%;
+  }
   #nav-mobile {
-    margin-bottom: 10px;
+    width: 100%;
+    margin: 0 auto 10px auto;
   }
-  #nav-mobile li {
-    margin: 0 40px;
-  }
-}
-@media screen and (max-width: 509px) {
   #nav-mobile li {
     margin: 0 30px;
   }
 }
-@media screen and (max-width: 447px) {
+@media screen and (max-width: 509px) {
   #nav-mobile li {
     margin: 0 20px;
   }
 }
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 433px) {
   #nav-mobile li {
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 1.5em;
   }
 }
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 355px) {
   #nav-mobile li {
     margin: 0;
     display: block;

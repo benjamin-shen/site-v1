@@ -16,11 +16,14 @@ const AboutText = ({ mobile }) => {
   return (
     <div>
       <div
-        id="about-content"
-        className={mobile ? "hide-on-med-and-up" : "hide-on-small-and-down"}
+        className={
+          "about-content " +
+          (mobile ? "hide-on-med-and-up" : "hide-on-small-and-down")
+        }
       >
         <p>
-          I'm a rising junior at{" "}
+          My full name is Benjamin Shen, but my friends call me Ben. I'm a
+          rising junior at{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -36,7 +39,7 @@ const AboutText = ({ mobile }) => {
           >
             Computer Science
           </a>
-          . I value friendships and I'm driven by people.
+          . I like people, music, and food (in that order).
         </p>
         <p>
           I was born and raised in New York City. My interests in technology
@@ -85,11 +88,11 @@ const AboutText = ({ mobile }) => {
           >
             Flux
           </a>
-          ; I've been working throughout the summer to improve and adapt our
+          . I've been working throughout the summer to improve and adapt our
           product to social distancing and unprecedented institutional policies.
         </p>
         <p>
-          I also enjoying singing in my free time. I sang in a high school choir
+          I also enjoy singing in my free time. I sang in a high school choir
           and was president of my a cappella group; now I'm singing in the{" "}
           <a
             rel="noopener noreferrer"
@@ -148,7 +151,7 @@ const AboutText = ({ mobile }) => {
 
 const About = () => {
   useEffect(() => {
-    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div id="about">

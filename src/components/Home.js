@@ -61,7 +61,7 @@ const HomeText = () => {
 
 const Home = () => {
   useEffect(() => {
-    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div id="home">

@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <header id="header" className="valign-wrapper center-align">
-        <div id="nav" className="nav-wrapper">
+        <div id="nav">
           <h1 className="left center-on-small-only">
             <NavLink exact to="/home" activeClassName="is-active">
               <div className="hide-on-small-and-down show-on-med-and-up">

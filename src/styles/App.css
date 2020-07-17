@@ -1,3 +1,37 @@
 #app {
   height: 100%;
 }
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 3;
+}
+main {
+  padding-top: 111px;
+}
+
+@media screen and (max-width: 717px) {
+  main {
+    padding-top: 155px;
+  }
+}
+@media screen and (max-width: 433px) {
+  main {
+    padding-top: 149px;
+  }
+}
+@media screen and (max-width: 355px) {
+  header {
+    position: relative;
+  }
+  main {
+    padding-top: 0;
+  }
+}

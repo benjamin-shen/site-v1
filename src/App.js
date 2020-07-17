@@ -25,6 +25,11 @@ const App = () => {
     const recaptcha = document.createElement("script");
     recaptcha.src = "https://www.google.com/recaptcha/api.js";
     document.body.appendChild(recaptcha);
+
+    const collapseHeader = document.createElement("script");
+    collapseHeader.innerHTML =
+      'window.onscroll = function() {const header = document.getElementById("header"); if (window.innerWidth > 355) {header.style.paddingTop=(50-window.pageYOffset).toString() + "px"} else {header.style.paddingTop="10px";}}';
+    document.body.appendChild(collapseHeader);
   }, []);
   return (
     <div id="app">
