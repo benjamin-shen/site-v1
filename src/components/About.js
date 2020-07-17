@@ -35,20 +35,12 @@ const AboutText = ({ mobile }) => {
             href="https://www.cs.cornell.edu"
           >
             Computer Science
-          </a>{" "}
-          with interests in{" "}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.cs.cornell.edu/undergrad/minors/game-design-minor"
-          >
-            Game Design
           </a>
           . I value friendships and I'm driven by people.
         </p>
         <p>
-          I was born and raised in New York City. My interest in technology
-          began as a kid, and followed me through{" "}
+          I was born and raised in New York City. My interests in technology
+          began as a kid and followed me through{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -141,9 +133,11 @@ const AboutText = ({ mobile }) => {
           and watching movies with rushed endings.
         </p>
         <p>
-          I'm a full-time student with a part-time job, but I'm always looking
-          for new opportunities in the tech field. If you have freelance or
-          startup work (no matter how big or small) and you're looking for a
+          I'm currently a full-time student with a part-time job, but I'm always
+          looking for new opportunities in the tech field. You can view my{" "}
+          <Link to="/resume">Resume</Link> or{" "}
+          <Link to="/projects">Projects</Link> to see if I'm a good fit for you.
+          If you have freelance/startup work or just want to chat with a
           developer, you can <Link to="/contact">Contact</Link> me and I'd love
           to talk!
         </p>
