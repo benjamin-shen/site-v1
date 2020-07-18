@@ -53,8 +53,8 @@ const AboutText = ({ mobile }) => {
           </a>
           , a large specialized high school in Downtown Manhattan. My favorite
           subject was math, until I took my first Intro to Computer Science
-          class. Ever since, I've been drawn to the potential of my code making
-          the world a happier place.
+          class. Ever since, I've been drawn to the potential that my code could
+          make the world a happier place.
         </p>
         <p>
           My academic interests in the{" "}
@@ -151,7 +151,7 @@ const AboutText = ({ mobile }) => {
 
 const About = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <div id="about">

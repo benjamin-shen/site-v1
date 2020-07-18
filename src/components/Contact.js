@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import loadjs from "loadjs";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/Form.css";
@@ -17,11 +18,8 @@ const phone = "(917) 719-0520";
 
 const Form = () => {
   useEffect(() => {
-    if (typeof window.grecaptcha !== "undefined" && window.grecaptcha) {
-      window.grecaptcha.ready(function () {
-        window.location.reload(false);
-      });
-    }
+    // reloads script every time client navigates elsewhere and comes back
+    loadjs("https://www.google.com/recaptcha/api.js");
   }, []);
   return (
     <div className="form">
@@ -59,7 +57,7 @@ const Form = () => {
 
 const Contact = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <div id="contact">

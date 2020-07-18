@@ -1,5 +1,5 @@
 #header {
-  padding: 50px 10px 0 10px;
+  padding: 30px 10px 0 10px;
 }
 #header h1 {
   margin: 0 0 10px 10px;
@@ -34,7 +34,7 @@
 }
 @media screen and (max-width: 717px) {
   #header {
-    padding: 0;
+    padding-top: 10px;
   }
   #header h1 {
     width: 100%;
@@ -52,13 +52,13 @@
     margin: 0 20px;
   }
 }
-@media screen and (max-width: 433px) {
+@media screen and (max-width: 455px) {
   #nav-mobile li {
     margin: 0 15px;
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 375px) {
   #nav-mobile li {
     margin: 0;
     display: block;
