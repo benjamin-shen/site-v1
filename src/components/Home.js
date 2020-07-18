@@ -5,10 +5,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/Card.css";
 import "../styles/Home.css";
-import glozz from "../assets/images/glozz.jpg";
-import flux from "../assets/images/flux.png";
+import GlozzCard from "./Home Cards/Glozz";
+import FluxCard from "./Home Cards/Flux";
 
-const Card = ({ img, title, description, info }) => {
+export const Card = ({ img, title, description, info }) => {
   return (
     <div className="card-box">
       <div className="card medium">
@@ -78,138 +78,8 @@ const Home = () => {
       <main className="container">
         <HomeText />
         <div id="cards" className="center">
-          <Card
-            img={glozz}
-            title="Glozz"
-            description={
-              <p>
-                Cornell University <br />
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://www.gleeclub.com"
-                >
-                  Glee Club
-                </a>{" "}
-                and{" "}
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://cuchorus.com"
-                >
-                  Chorus
-                </a>
-                <br />
-                Class of 2022
-              </p>
-            }
-            info={
-              <div>
-                <p>
-                  This is one of my biggest and closest friend groups at
-                  Cornell. We're all from various backgrounds, connected by our
-                  love for singing.
-                </p>
-                <p>
-                  Glozz has been my motivation for many independent scripts and
-                  projects. Major ones include:
-                </p>
-                <ul>
-                  <li>
-                    <strong>Dbot</strong>, a bot for our group chat on Groupme.
-                    <br />
-                    <em>Built with Python.</em>
-                  </li>
-                  <li>
-                    <strong>GLOZZ Personality Quiz</strong>, a multiple-choice
-                    quiz to see which members of the group you are most similar
-                    to. <br />
-                    <em>Built with Python and JavaScript.</em>
-                  </li>
-                </ul>
-              </div>
-            }
-          />
-          <Card
-            img={flux}
-            title="Flux"
-            description={
-              <p>
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://www.cornelldti.org"
-                >
-                  Cornell DTI
-                </a>{" "}
-                Project team <br />
-                <a
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://www.cornelldti.org/projects/flux/"
-                >
-                  Flux Subteam
-                </a>
-                <br /> Flux iOS, Flux Android, Flux Fitness
-              </p>
-            }
-            info={
-              <div>
-                <p>
-                  I'm on the Cornell Design &amp; Tech Initative at Cornell, as
-                  a back-end developer for Flux.
-                </p>
-                <p>
-                  I've learned a lot about app development from being the team.
-                  I worked primarily on the back end for the Flux mobile apps,
-                  and the full stack for the Flux Fitness web app. Repositories
-                  I've contributed to include:
-                </p>
-                <ul>
-                  <li>
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://github.com/cornell-dti/campus-density-backend"
-                    >
-                      campus-density-backend
-                    </a>{" "}
-                    (<em>Flux mobile app back end in Node.js</em>)
-                  </li>
-                  <li>
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://github.com/cornell-dti/flux-functions"
-                    >
-                      flux-functions
-                    </a>{" "}
-                    (<em>Flux mobile app Cloud Functions in Node.js</em>)
-                  </li>
-                  <li>
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://github.com/cornell-dti/flux-fitness"
-                    >
-                      flux-fitness
-                    </a>{" "}
-                    (<em>Flux Fitness web app in Vue.js</em>)
-                  </li>
-                  <li>
-                    <a
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://github.com/benjamin-shen/flux-fitness_historic-data"
-                    >
-                      flux-fitness_historic-data
-                    </a>{" "}
-                    (<em>Flux Fitness backend scripts in Python</em>)
-                  </li>
-                </ul>
-              </div>
-            }
-          />
+          <GlozzCard />
+          <FluxCard />
         </div>
       </main>
       <Footer />
