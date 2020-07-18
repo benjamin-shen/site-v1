@@ -2,15 +2,20 @@
   padding: 30px 10px 0 10px;
 }
 #header h1 {
-  margin: 0 0 10px 10px;
+  margin: 0 0 10px 0;
   font-size: 3em;
 }
 #header #nav {
   height: 100%;
-  width: 95%;
+  width: 97%;
   padding: 5px 20px 0 20px;
   margin: 0 auto;
-  border-bottom: 2px solid black;
+  -webkit-box-shadow: 0 5px 5px -5px gray;
+  -moz-box-shadow: 0 5px 5px -5px gray;
+  -ms-box-shadow: 0 5px 5px -5px gray;
+  -o-box-shadow: 0 5px 5px -5px gray;
+  box-shadow: 0 5px 5px -5px gray;
+  position: relative;
 }
 #header a {
   color: #0a090c;
@@ -19,20 +24,18 @@
   color: #26547c;
 }
 #nav-mobile {
-  margin: 10px 0;
+  margin: 10px -20px 10px 0;
 }
 #nav-mobile li {
   font-size: 26px;
-  margin: 0 10px;
+  margin: 0 20px;
   display: inline-block;
 }
 #header .is-active {
   color: #0064c2;
 }
-#nav-mobile .space {
-  margin: 0 10px;
-}
-@media screen and (max-width: 717px) {
+
+@media screen and (max-width: 767px) {
   #header {
     padding-top: 10px;
   }
@@ -47,7 +50,7 @@
     margin: 0 30px;
   }
 }
-@media screen and (max-width: 509px) {
+@media screen and (max-width: 515px) {
   #nav-mobile li {
     margin: 0 20px;
   }

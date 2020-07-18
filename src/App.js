@@ -3,13 +3,14 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import LandingPage from "./components/LandingPage";
+// import LandingPage from "./components/LandingPage";
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
 import ResumePage from "./components/Resume";
+import ProjectsPage from "./components/Projects";
 import ContactPage from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
-import UnderDevelopment from "./components/UnderDevelopment";
+// import UnderDevelopment from "./components/UnderDevelopment";
 
 import "./styles/App.css";
 
@@ -18,9 +19,12 @@ import headshot from "./assets/images/bfs45-transparent.png";
 const App = () => {
   useEffect(() => {
     const callback = document.createElement("script");
-    callback.innerHTML =
-      'function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}';
+    callback.innerHTML = `function onSubmit(token) {return new Promise(function (resolve, reject) {document.getElementById("contact-form-submit").click();resolve();});}`;
     document.body.appendChild(callback);
+
+    const collapsible = document.createElement("script");
+    collapsible.innerHTML = `document.addEventListener('DOMContentLoaded', function() {var elems = document.querySelectorAll('.collapsible');var instances = M.Collapsible.init(elems, {accordion: false});});`;
+    document.body.appendChild(collapsible);
   }, []);
   return (
     <div id="app">
@@ -46,11 +50,10 @@ const App = () => {
       </Helmet>
       <Router>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route exact path="/home" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/resume" component={ResumePage} />
-          <Route exact path="/projects" component={UnderDevelopment} />
+          <Route exact path="/projects" component={ProjectsPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Route component={PageNotFound} />
         </Switch>

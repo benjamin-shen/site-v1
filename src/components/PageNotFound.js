@@ -19,7 +19,7 @@ const PageNotFound = (props) => {
         >
           Go Back
         </button>
-        <Link to="/home">
+        <Link to="/">
           <button className="btn waves-effect z-depth-2 right transparent black-text">
             Home
           </button>

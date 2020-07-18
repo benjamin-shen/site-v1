@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "../styles/Resume.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import "../styles/Resume.css";
 import resume from "../assets/Benjamin Shen.pdf";
 
 const Resume = () => {

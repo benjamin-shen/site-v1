@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import "../styles/Project.css";
-import "../styles/Home.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import "../styles/Card.css";
+import "../styles/Home.css";
 import glozz from "../assets/images/glozz.jpg";
 import flux from "../assets/images/flux.png";
 
-const Project = ({ img, title, description, info }) => {
+const Card = ({ img, title, description, info }) => {
   return (
     <div className="card-box">
       <div className="card medium">
@@ -77,8 +77,8 @@ const Home = () => {
       <Header />
       <main className="container">
         <HomeText />
-        <div id="projects" className="center">
-          <Project
+        <div id="cards" className="center">
+          <Card
             img={glozz}
             title="Glozz"
             description={
@@ -130,7 +130,7 @@ const Home = () => {
               </div>
             }
           />
-          <Project
+          <Card
             img={flux}
             title="Flux"
             description={
@@ -210,8 +210,6 @@ const Home = () => {
               </div>
             }
           />
-          {/*<Project />
-          <Project />*/}
         </div>
       </main>
       <Footer />

@@ -17,14 +17,14 @@ main {
   padding-top: 95px;
 }
 
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 767px) {
   main {
     padding-top: 120px;
   }
 }
 @media screen and (max-width: 455px) {
   main {
-    padding-top: 114px;
+    padding-top: 110px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -33,5 +33,8 @@ main {
   }
   main {
     padding-top: 0;
+  }
+  main h2 {
+    margin-top: 30px;
   }
 }
