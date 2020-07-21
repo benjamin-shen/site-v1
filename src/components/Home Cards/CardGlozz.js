@@ -2,10 +2,10 @@ import React from "react";
 import { Card } from "../Home";
 import glozz from "../../assets/images/glozz.jpg";
 
-const GlozzCard = () => {
+const CardGlozz = () => {
   return (
     <Card
-      img={glozz}
+      image={glozz}
       title="Glozz"
       description={
         <p>
@@ -58,4 +58,4 @@ const GlozzCard = () => {
   );
 };
 
-export default GlozzCard;
+export default CardGlozz;

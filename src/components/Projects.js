@@ -6,53 +6,35 @@ import Footer from "./Footer";
 import "../styles/Project.css";
 import "../styles/Projects.css";
 
-const Project = ({
-  title,
-  description,
-  context,
-  accomplishments,
-  reflection,
-}) => {
+// Applications
+import Dbot from "./Projects Project/Applications/Dbot";
+import GlozzPersonalityTest from "./Projects Project/Applications/GlozzPersonalityTest";
+import WebTest from "./Projects Project/Applications/WebTest";
+import Admissions2019 from "./Projects Project/Applications/Admissions2019";
+// Products
+import Flux from "./Projects Project/Products/Flux";
+import FluxFitness from "./Projects Project/Products/FluxFitness";
+// Games
+import Rubato from "./Projects Project/Games/Rubato";
+// Miscellaneous
+import KeyDB from "./Projects Project/Miscellaneous/KeyDB";
+
+export const Project = ({ title, description, content }) => {
   return (
-    <div id={title.replace(/\s+/g, "-").toLowerCase()}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Collapsible accordion={false} popout>
+    <div id={title && title.replace(/\s+/g, "-").toLowerCase()}>
+      <h3>{title && title.toUpperCase()}</h3>
+      <Collapsible accordion={false}>
         <CollapsibleItem
           expanded={false}
           header={
-            <div>
-              <span>Context</span>
+            <div className="header-content">
               <i className="material-icons right">expand_more</i>
+              <p>{description}</p>
             </div>
           }
           node="div"
         >
-          {context || "...coming soon!"}
-        </CollapsibleItem>
-        <CollapsibleItem
-          expanded={false}
-          header={
-            <div>
-              <span>Accomplishments</span>
-              <i className="material-icons right">expand_more</i>
-            </div>
-          }
-          node="div"
-        >
-          {accomplishments || "...coming soon!"}
-        </CollapsibleItem>
-        <CollapsibleItem
-          expanded={false}
-          header={
-            <div>
-              <span>Reflection</span>
-              <i className="material-icons right">expand_more</i>
-            </div>
-          }
-          node="div"
-        >
-          {reflection || "...coming soon!"}
+          {content || "...coming soon!"}
         </CollapsibleItem>
       </Collapsible>
     </div>
@@ -74,7 +56,28 @@ const Projects = () => {
       </Helmet>
       <Header />
       <main className="container">
-        <Project title="title" description="description" />
+        <div className="projects-content">
+          <div>
+            <h2>Applications</h2>
+            <Dbot />
+            <GlozzPersonalityTest />
+            <WebTest />
+            <Admissions2019 />
+          </div>
+          <div>
+            <h2>Products</h2>
+            <Flux />
+            <FluxFitness />
+          </div>
+          <div>
+            <h2>Games</h2>
+            <Rubato />
+          </div>
+          <div>
+            <h2>Miscellaneous</h2>
+            <KeyDB />
+          </div>
+        </div>
       </main>
       <Footer />
     </div>

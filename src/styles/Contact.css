@@ -4,7 +4,6 @@
   flex-direction: column;
 }
 #contact h2 {
-  font-size: 2.2em;
   margin: 10px 0;
 }
 #form {
@@ -17,21 +16,4 @@
 #form p {
   font-size: 1.2em;
   margin: 0;
-}
-
-@media screen and (max-width: 1010px) {
-  #form h2 {
-    font-size: 2.1em;
-  }
-  #form p {
-    font-size: 1.1em;
-  }
-}
-@media screen and (max-width: 652px) {
-  #form h2 {
-    font-size: 2em;
-  }
-  #form p {
-    font-size: 1em;
-  }
 }

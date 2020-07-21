@@ -4,7 +4,7 @@
 }
 #cards .card,
 #cards .card img {
-  border-radius: 25px 25px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 #cards .card-box {
   width: 45%;
@@ -35,6 +35,9 @@
   #cards .card {
     max-height: 350px;
   }
+  #cards .card-content {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 800px) {
   #cards .card-box {
@@ -45,6 +48,9 @@
   #cards .card {
     max-height: 400px;
   }
+  #cards .card-content {
+    padding: 16px;
+  }
 }
 @media screen and (max-width: 652px) {
   #cards .card-box {
@@ -53,9 +59,15 @@
   #cards .card {
     max-height: 360px;
   }
+  #cards .card-content {
+    padding: 12px;
+  }
 }
 @media screen and (max-width: 376px) {
   #cards .card {
     max-height: 320px;
+  }
+  #cards .card-content {
+    padding: 24px;
   }
 }

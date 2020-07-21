@@ -2,8 +2,37 @@
   height: 100%;
 }
 
-main {
-  flex: 1 0 auto;
+main h2 {
+  font-size: 2.2em;
+}
+main p {
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1425px) {
+  main h2 {
+    font-size: 2.1em;
+  }
+  main p {
+    font-size: 1.15em;
+  }
+}
+@media screen and (max-width: 1010px) {
+  main h2 {
+    font-size: 2em;
+  }
+  main p {
+    font-size: 1.05em;
+  }
+}
+@media screen and (max-width: 652px) {
+  main h2 {
+    font-size: 1.9em;
+  }
+  main p {
+    font-size: 1em;
+  }
 }
 
 header {
@@ -14,6 +43,7 @@ header {
   z-index: 3;
 }
 main {
+  flex: 1 0 auto;
   padding-top: 95px;
 }
 

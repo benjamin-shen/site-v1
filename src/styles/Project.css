@@ -1,0 +1,32 @@
+#projects .collapsible,
+#projects .collapsible-header,
+#projects .collapsible-body {
+  border-radius: 6px;
+  transition: border-radius 400ms;
+}
+#projects .collapsible .active .collapsible-header {
+  border-radius: 6px 6px 0 0;
+}
+#projects .header-content {
+  width: 100%;
+}
+#projects .collapsible-body {
+  padding: 20px;
+}
+#projects .collapsible i {
+  margin: 0;
+  transition: transform 400ms;
+}
+#projects .collapsible .active i {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+#projects h3 {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+#projects p {
+  font-size: 1.1em;
+  margin: 0;
+}

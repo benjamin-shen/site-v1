@@ -5,16 +5,20 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/Card.css";
 import "../styles/Home.css";
-import GlozzCard from "./Home Cards/Glozz";
-import FluxCard from "./Home Cards/Flux";
+import CardGlozz from "./Home Cards/CardGlozz";
+import CardFlux from "./Home Cards/CardFlux";
 
-export const Card = ({ img, title, description, info }) => {
+export const Card = ({ image, title, description, info }) => {
   return (
     <div className="card-box">
       <div className="card medium">
         <div className="card-image waves-effect waves-block waves-light">
-          {img && (
-            <img className="activator" src={img} alt={title + " Card Image"} />
+          {image && (
+            <img
+              className="activator"
+              src={image}
+              alt={title + " Card Image"}
+            />
           )}
         </div>
         <div className="card-content">
@@ -78,8 +82,8 @@ const Home = () => {
       <main className="container">
         <HomeText />
         <div id="cards" className="center">
-          <GlozzCard />
-          <FluxCard />
+          <CardGlozz />
+          <CardFlux />
         </div>
       </main>
       <Footer />

@@ -2,10 +2,10 @@ import React from "react";
 import { Card } from "../Home";
 import flux from "../../assets/images/flux.png";
 
-const FluxCard = () => {
+const CardFlux = () => {
   return (
     <Card
-      img={flux}
+      image={flux}
       title="Flux"
       description={
         <p>
@@ -87,4 +87,4 @@ const FluxCard = () => {
   );
 };
 
-export default FluxCard;
+export default CardFlux;
