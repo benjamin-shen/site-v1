@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Collapsible, CollapsibleItem } from "react-materialize";
 import Header from "./Header";
@@ -60,6 +59,7 @@ const Project = ({
   );
 };
 
+// TODO add side nav
 const Projects = () => {
   useEffect(() => {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });

@@ -164,7 +164,7 @@ const About = () => {
       <Header />
       <main className="container">
         <h2>About Me</h2>
-        <AboutText mobile="true" />
+        <AboutText mobile={true} />
         <img
           id="headshot"
           src={headshot}

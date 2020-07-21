@@ -4,6 +4,38 @@ import bbt from "../assets/icons/bbt160.png";
 import github from "../assets/icons/github32.png";
 import linkedin from "../assets/icons/linkedin32.png";
 
+const BuyMeCoffee = () => {
+  return (
+    <a
+      id="bmc"
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://www.buymeacoffee.com/benshen"
+    >
+      <button className="btn z-depth-2">
+        <div className="valign-wrapper">
+          <img id="bmc-img" src={bbt} alt="Buy me bubble tea!" />
+          <span id="bmc-text">Buy me bubble tea</span>
+        </div>
+      </button>
+    </a>
+  );
+};
+
+const Social = ({ name, link, image, label }) => {
+  return (
+    <a
+      href={link}
+      rel="noopener noreferrer"
+      target="_blank"
+      className="white-text"
+    >
+      <img src={image} alt={name + " Icon"} />
+      <span className="social-media">{label}</span>
+    </a>
+  );
+};
+
 const Footer = () => {
   return (
     <footer id="footer">
@@ -13,19 +45,7 @@ const Footer = () => {
             <div className="col l4 m12 s12 center-on-med-and-down">
               <div className="left-section">
                 <h5 className="white-text">Support Me</h5>
-                <a
-                  id="bmc"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href="https://www.buymeacoffee.com/benshen"
-                >
-                  <button className="btn z-depth-2">
-                    <div className="valign-wrapper">
-                      <img id="bmc-img" src={bbt} alt="Buy me bubble tea!" />
-                      <span id="bmc-text">Buy me bubble tea</span>
-                    </div>
-                  </button>
-                </a>
+                <BuyMeCoffee />
               </div>
             </div>
             <div className="col l4 m12 s12 center">
@@ -39,26 +59,20 @@ const Footer = () => {
                 <h5 className="white-text">Visit My Socials</h5>
                 <ul>
                   <li>
-                    <a
-                      href="https://github.com/benjamin-shen"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="white-text"
-                    >
-                      <img src={github} alt="Github" />
-                      <span className="social-media">benjamin-shen</span>
-                    </a>
+                    <Social
+                      name="Github"
+                      link="https://github.com/benjamin-shen"
+                      image={github}
+                      label="benjamin-shen"
+                    />
                   </li>
                   <li>
-                    <a
-                      href="https://www.linkedin.com/in/benjaminfshen/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className="white-text"
-                    >
-                      <img src={linkedin} alt="LinkedIn" />
-                      <span className="social-media">benjaminshen</span>
-                    </a>
+                    <Social
+                      name="LinkedIn"
+                      link="https://www.linkedin.com/in/benjaminfshen/"
+                      image={linkedin}
+                      label="benjaminfshen"
+                    />
                   </li>
                 </ul>
               </div>
