@@ -3,7 +3,21 @@ import { Project } from "../../Projects";
 
 const WebTest = () => {
   return (
-    <Project title="Web Test" description="Online Testing System" content="" />
+    <Project
+      title="Web Test"
+      description="Online Testing System"
+      content={
+        <div>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/benjamin-shen/web-test"
+          >
+            Github
+          </a>
+        </div>
+      }
+    />
   );
 };
 

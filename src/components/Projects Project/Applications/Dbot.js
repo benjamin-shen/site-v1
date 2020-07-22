@@ -6,7 +6,17 @@ const Dbot = () => {
     <Project
       title="Dbot"
       description="GroupMe Bot with Library of Commands and Keywords"
-      content=""
+      content={
+        <div>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/benjamin-shen/dbot"
+          >
+            Github
+          </a>
+        </div>
+      }
     />
   );
 };

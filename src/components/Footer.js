@@ -14,7 +14,12 @@ const BuyMeCoffee = () => {
     >
       <button className="btn z-depth-2">
         <div className="valign-wrapper">
-          <img id="bmc-img" src={bbt} alt="Buy me bubble tea!" />
+          <img
+            id="bmc-img"
+            src={bbt}
+            alt="Buy me bubble tea!"
+            onerror='this.style.display = "none"'
+          />
           <span id="bmc-text">Buy me bubble tea</span>
         </div>
       </button>
@@ -25,15 +30,24 @@ const BuyMeCoffee = () => {
 const Social = ({ name, link, image, label }) => {
   return (
     <a
-      href={link}
       rel="noopener noreferrer"
       target="_blank"
+      href={link}
       className="white-text"
     >
       <img src={image} alt={name + " Icon"} />
       <span className="social-media">{label}</span>
     </a>
   );
+};
+
+const FooterMessage = () => {
+  const messages = [
+    "Stay healthy!",
+    "Have a good day!",
+    "Thank you for visiting!",
+  ];
+  return <h5>{messages[Math.floor(Math.random() * messages.length)]}</h5>;
 };
 
 const Footer = () => {
@@ -50,7 +64,7 @@ const Footer = () => {
             </div>
             <div className="col l4 m12 s12 center">
               <div className="hide-on-med-and-down">
-                <h5>Stay Healthy!</h5>
+                <FooterMessage />
                 <i className="material-icons">favorite_outline</i>
               </div>
             </div>

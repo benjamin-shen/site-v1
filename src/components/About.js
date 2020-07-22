@@ -170,6 +170,7 @@ const About = () => {
           src={headshot}
           alt="Benjamin Shen Headshot"
           style={cssShapes}
+          onerror='this.style.display = "none"'
         />
         <AboutText />
       </main>

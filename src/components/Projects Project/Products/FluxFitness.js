@@ -6,7 +6,17 @@ const FluxFitness = () => {
     <Project
       title="Flux Fitness"
       description="Admin-facing Web App for Fitness Facility Crowdedness"
-      content=""
+      content={
+        <div>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/cornell-dti/flux-fitness"
+          >
+            Github
+          </a>
+        </div>
+      }
     />
   );
 };

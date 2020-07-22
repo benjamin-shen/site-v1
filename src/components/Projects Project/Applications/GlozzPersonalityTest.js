@@ -6,7 +6,17 @@ const GlozzPersonalityTest = () => {
     <Project
       title="Glozz Personality Test"
       description="Multiple-Choice Personality Test"
-      content=""
+      content={
+        <div>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/benjamin-shen/glozzpersonalitytest"
+          >
+            Github
+          </a>
+        </div>
+      }
     />
   );
 };

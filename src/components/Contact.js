@@ -72,7 +72,11 @@ const Contact = () => {
         <div id="form" className="z-depth-1">
           <h2>Contact Me</h2>
           <p>
-            <a href={"mailto:" + emailAddress + "?subject=Website%20Contact"}>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href={"mailto:" + emailAddress + "?subject=Website%20Contact"}
+            >
               {emailText}
             </a>
           </p>

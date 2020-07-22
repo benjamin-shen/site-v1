@@ -6,7 +6,17 @@ const Rubato = () => {
     <Project
       title="Rubato"
       description="2D Combat Platformer with Time-Freeze Mechanic"
-      content=""
+      content={
+        <div>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://pages.github.coecis.cornell.edu/glassboxgames/rubato-releases/"
+          >
+            Github Pages
+          </a>
+        </div>
+      }
     />
   );
 };
