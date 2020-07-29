@@ -6,3 +6,9 @@
 #projects .projects-content {
   margin-bottom: 30px;
 }
+#projects .project-group {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+}

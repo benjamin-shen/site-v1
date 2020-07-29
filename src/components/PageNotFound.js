@@ -7,7 +7,7 @@ const PageNotFound = (props) => {
     <div id="message">
       <h2>404</h2>
       <h1>Page Not Found</h1>
-      <p id="route">benjaminshen.com{props.location.pathname}</p>
+      <p id="route">{window.location.href}</p>
       <p>
         The specified path was not found on this website. Please check the URL
         for mistakes and try again.

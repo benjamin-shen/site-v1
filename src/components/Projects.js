@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Collapsible, CollapsibleItem } from "react-materialize";
+import { useHistory } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/Project.css";
@@ -19,24 +19,29 @@ import Rubato from "./Projects Project/Games/Rubato";
 // Miscellaneous
 import KeyDB from "./Projects Project/Miscellaneous/KeyDB";
 
-export const Project = ({ title, description, content }) => {
+export const Project = ({ title, description, link }) => {
+  const history = useHistory();
+  const slug =
+    title &&
+    title
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "") // eslint-disable-line
+      .replace(/\-\-+/g, "-") // eslint-disable-line
+      .replace(/^-+/, "")
+      .replace(/-+$/, "");
+  const changeRoute = () => {
+    history.push("/projects/" + slug);
+  };
   return (
-    <div id={title && title.replace(/\s+/g, "-").toLowerCase()}>
+    <div
+      id={slug}
+      className="project z-depth-1 hoverable"
+      onClick={changeRoute}
+    >
       <h3>{title && title.toUpperCase()}</h3>
-      <Collapsible accordion={false}>
-        <CollapsibleItem
-          expanded={false}
-          header={
-            <div className="header-content">
-              <i className="material-icons right">expand_more</i>
-              <p>{description}</p>
-            </div>
-          }
-          node="div"
-        >
-          {content || "...coming soon!"}
-        </CollapsibleItem>
-      </Collapsible>
+      <p>{description}</p>
     </div>
   );
 };
@@ -57,24 +62,24 @@ const Projects = () => {
       <Header />
       <main className="container">
         <div className="projects-content">
-          <div>
-            <h2>Applications</h2>
+          <h2>Applications</h2>
+          <div className="project-group">
             <Dbot />
             <GlozzPersonalityTest />
             <WebTest />
             <Admissions2019 />
           </div>
-          <div>
-            <h2>Products</h2>
+          <h2>Products</h2>
+          <div className="project-group">
             <Flux />
             <FluxFitness />
           </div>
-          <div>
-            <h2>Games</h2>
+          <h2>Games</h2>
+          <div className="project-group">
             <Rubato />
           </div>
-          <div>
-            <h2>Miscellaneous</h2>
+          <h2>Miscellaneous</h2>
+          <div className="project-group">
             <KeyDB />
           </div>
         </div>
