@@ -54,6 +54,7 @@ const App = () => {
           <Route exact path="/about" component={AboutPage} />
           <Route exact path="/resume" component={ResumePage} />
           <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/projects/:slug" component={ProjectsPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Route component={PageNotFound} />
         </Switch>
