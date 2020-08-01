@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { useHistory } from "react-router-dom";
+import { ModalContainer } from "react-router-modal";
 import Header from "./Header";
 import Footer from "./Footer";
-import "../styles/Project.css";
 import "../styles/Projects.css";
 
 // Applications
@@ -18,33 +17,6 @@ import FluxFitness from "./Projects Project/Products/FluxFitness";
 import Rubato from "./Projects Project/Games/Rubato";
 // Miscellaneous
 import KeyDB from "./Projects Project/Miscellaneous/KeyDB";
-
-export const Project = ({ title, description, link }) => {
-  const history = useHistory();
-  const slug =
-    title &&
-    title
-      .trim()
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[^\w\-]+/g, "") // eslint-disable-line
-      .replace(/\-\-+/g, "-") // eslint-disable-line
-      .replace(/^-+/, "")
-      .replace(/-+$/, "");
-  const changeRoute = () => {
-    history.push("/projects/" + slug);
-  };
-  return (
-    <div
-      id={slug}
-      className="project z-depth-1 hoverable"
-      onClick={changeRoute}
-    >
-      <h3>{title && title.toUpperCase()}</h3>
-      <p>{description}</p>
-    </div>
-  );
-};
 
 // TODO add side nav
 const Projects = () => {
@@ -61,6 +33,7 @@ const Projects = () => {
       </Helmet>
       <Header />
       <main className="container">
+        <ModalContainer />
         <div className="projects-content">
           <h2>Applications</h2>
           <div className="project-group">

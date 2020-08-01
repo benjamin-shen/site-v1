@@ -18,7 +18,6 @@ const BuyMeCoffee = () => {
             id="bmc-img"
             src={bbt}
             alt="Buy me bubble tea!"
-            onerror='this.style.display = "none"'
           />
           <span id="bmc-text">Buy me bubble tea</span>
         </div>
@@ -46,6 +45,30 @@ const FooterMessage = () => {
     "Stay healthy!",
     "Have a good day!",
     "Thank you for visiting!",
+    // <span>
+    //   Check out my{" "}
+    //   <a
+    //     rel="noopener noreferrer"
+    //     target="_blank"
+    //     href="https://blog.benjaminshen.com"
+    //     className="blue-text text-darken-2"
+    //   >
+    //     blog
+    //   </a>
+    //   !
+    // </span>,
+    // <span>
+    //   Check out my{" "}
+    //   <a
+    //     rel="noopener noreferrer"
+    //     target="_blank"
+    //     href="https://sites.benjaminshen.com"
+    //     className="blue-text text-darken-2"
+    //   >
+    //     other sites
+    //   </a>
+    //   !
+    // </span>,
   ];
   return <h5>{messages[Math.floor(Math.random() * messages.length)]}</h5>;
 };
