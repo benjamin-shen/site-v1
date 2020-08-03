@@ -11,7 +11,7 @@ const Resume = () => {
   return (
     <div id="resume">
       <Header />
-      <main className="center container">
+      <main className="center">
         <h2>
           <a rel="noopener noreferrer" target="_blank" href={resume}>
             Benjamin Shen.pdf

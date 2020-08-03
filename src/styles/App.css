@@ -64,7 +64,11 @@ main {
     padding-top: 110px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 365px) {
+  #nav-mobile li {
+    margin: 0;
+    display: block;
+  }
   header {
     position: relative;
   }

@@ -61,7 +61,7 @@
     font-size: 1.5em;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 365px) {
   #nav-mobile li {
     margin: 0;
     display: block;

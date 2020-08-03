@@ -21,11 +21,13 @@ export const Card = ({ image, title, description, info }) => {
             />
           )}
         </div>
-        <div className="card-content">
-          <span className="card-title activator">
-            {title && title.toUpperCase()}
-          </span>
-          {description}
+        <div className="card-content valign-wrapper">
+          <div className="card-content-text center">
+            <div className="card-title activator">
+              {title && title.toUpperCase()}
+            </div>
+            {description}
+          </div>
         </div>
         <div className="card-reveal">
           <span className="card-title">
