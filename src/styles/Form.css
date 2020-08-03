@@ -8,6 +8,7 @@
   width: 350px;
   height: 150px;
   font-size: 1.2em;
+  background-color: white;
 }
 .form button {
   margin: 20px 0 10px 0;
@@ -17,17 +18,16 @@
 }
 @media screen and (max-width: 652px) {
   .form textarea {
-    width: 300px;
+    max-width: 300px;
   }
 }
 @media screen and (max-width: 374px) {
   .form textarea {
-    width: 250px;
+    max-width: 250px;
   }
 }
 @media screen and (max-width: 329px) {
   .form textarea {
-    width: 200px;
+    max-width: 200px;
   }
 }
-

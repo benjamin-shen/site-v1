@@ -5,12 +5,23 @@ import "react-router-modal/css/react-router-modal.css";
 import "../styles/Project.css";
 import "../styles/ProjectModal.css";
 
-const ProjectModal = ({ content }) => {
-  return <div className="project-modal">More info coming soon!{content}</div>;
+const ProjectModal = ({ title, content }) => {
+  const history = useHistory();
+  const changeRoute = () => {
+    history.push("/projects");
+  };
+  return (
+    <div className="project-modal">
+      <i className="material-icons right x-icon" onClick={changeRoute}>
+        close
+      </i>
+      <h3>{title && title.toUpperCase()}</h3>
+      {content || <p>More info coming soon!</p>}
+    </div>
+  );
 };
 
 const Project = ({ title, description, content }) => {
-  const history = useHistory();
   const slug =
     title &&
     title
@@ -21,8 +32,10 @@ const Project = ({ title, description, content }) => {
       .replace(/\-\-+/g, "-") // eslint-disable-line
       .replace(/^-+/, "")
       .replace(/-+$/, "");
+  const path = "/projects/" + slug;
+  const history = useHistory();
   const changeRoute = () => {
-    history.push("/projects/" + slug);
+    history.push(path);
   };
   return (
     <div
@@ -33,9 +46,9 @@ const Project = ({ title, description, content }) => {
       <h3>{title && title.toUpperCase()}</h3>
       <p>{description}</p>
       <ModalRoute
-        path={`/projects/${slug}`}
+        path={path}
         parentPath="/projects"
-        component={() => <ProjectModal content={content} />}
+        component={() => <ProjectModal title={title} content={content} />}
       />
     </div>
   );

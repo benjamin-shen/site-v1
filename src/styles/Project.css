@@ -5,12 +5,9 @@
   border-radius: 6px;
   position: relative;
   cursor: pointer;
-}
-#projects h3 {
-  font-size: 1.4em;
-  margin: 0;
-}
-#projects p {
-  font-size: 1.1em;
-  margin: 0;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(242, 251, 255)
+  );
 }

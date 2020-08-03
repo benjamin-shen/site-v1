@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card } from "../Home";
 import glozz from "../../assets/images/glozz.jpg";
 
@@ -42,13 +43,17 @@ const CardGlozz = () => {
           </p>
           <ul>
             <li>
-              <strong>Dbot</strong>, a bot for our group chat on Groupme.
+              <Link to="/projects/dbot">Dbot</Link>, a bot for our group chat on
+              Groupme.
               <br />
               <em>Built with Python.</em>
             </li>
             <li>
-              <strong>GLOZZ Personality Quiz</strong>, a multiple-choice quiz to
-              see which members of the group you are most similar to. <br />
+              <Link to="/projects/glozz-personality-test">
+                GLOZZ Personality Quiz
+              </Link>
+              , a multiple-choice quiz to see which members of the group you are
+              most similar to. <br />
               <em>Built with Python and JavaScript.</em>
             </li>
           </ul>

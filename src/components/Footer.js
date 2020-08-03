@@ -14,11 +14,7 @@ const BuyMeCoffee = () => {
     >
       <button className="btn z-depth-2">
         <div className="valign-wrapper">
-          <img
-            id="bmc-img"
-            src={bbt}
-            alt="Buy me bubble tea!"
-          />
+          <img id="bmc-img" src={bbt} alt="Buy me bubble tea!" />
           <span id="bmc-text">Buy me bubble tea</span>
         </div>
       </button>
@@ -40,36 +36,36 @@ const Social = ({ name, link, image, label }) => {
   );
 };
 
+const messages = [
+  "Stay healthy!",
+  "Have a good day!",
+  "Thank you for visiting!",
+  // <span>
+  //   Check out my{" "}
+  //   <a
+  //     rel="noopener noreferrer"
+  //     target="_blank"
+  //     href="https://blog.benjaminshen.com"
+  //     className="blue-text text-darken-2"
+  //   >
+  //     blog
+  //   </a>
+  //   !
+  // </span>,
+  // <span>
+  //   Check out my{" "}
+  //   <a
+  //     rel="noopener noreferrer"
+  //     target="_blank"
+  //     href="https://sites.benjaminshen.com"
+  //     className="blue-text text-darken-2"
+  //   >
+  //     other sites
+  //   </a>
+  //   !
+  // </span>,
+];
 const FooterMessage = () => {
-  const messages = [
-    "Stay healthy!",
-    "Have a good day!",
-    "Thank you for visiting!",
-    // <span>
-    //   Check out my{" "}
-    //   <a
-    //     rel="noopener noreferrer"
-    //     target="_blank"
-    //     href="https://blog.benjaminshen.com"
-    //     className="blue-text text-darken-2"
-    //   >
-    //     blog
-    //   </a>
-    //   !
-    // </span>,
-    // <span>
-    //   Check out my{" "}
-    //   <a
-    //     rel="noopener noreferrer"
-    //     target="_blank"
-    //     href="https://sites.benjaminshen.com"
-    //     className="blue-text text-darken-2"
-    //   >
-    //     other sites
-    //   </a>
-    //   !
-    // </span>,
-  ];
   return <h5>{messages[Math.floor(Math.random() * messages.length)]}</h5>;
 };
 

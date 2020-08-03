@@ -56,7 +56,7 @@ const App = () => {
           <Route exact path="/projects" component={ProjectsPage} />
           <Route exact path="/projects/:slug" component={ProjectsPage} />
           <Route exact path="/contact" component={ContactPage} />
-          <Route component={PageNotFound} />
+          <Route component={PageNotFound} /> {/* TODO Add 404 status */}
         </Switch>
       </Router>
     </div>

@@ -12,8 +12,19 @@
   border-radius: 5px;
   margin: 40px auto;
   padding: 20px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(242, 251, 255)
+  );
 }
 #form p {
   font-size: 1.2em;
   margin: 0;
+}
+
+@media screen and (max-width: 329px) {
+  #form p {
+    font-size: 1em;
+  }
 }

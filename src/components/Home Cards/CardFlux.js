@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card } from "../Home";
 import flux from "../../assets/images/flux.png";
 
@@ -34,10 +35,11 @@ const CardFlux = () => {
             back-end developer for Flux.
           </p>
           <p>
-            I've learned a lot about app development from being the team. I
-            worked primarily on the back end for the Flux mobile apps, and the
-            full stack for the Flux Fitness web app. Repositories I've
-            contributed to include:
+            I've learned a lot about app development from being on the team. I
+            worked primarily on the back end for the{" "}
+            <Link to="/projects/flux">Flux</Link> mobile apps, and the full
+            stack for the <Link to="/projects/flux-fitness">Flux Fitness</Link>{" "}
+            web app. Repositories I've contributed to include:
           </p>
           <ul>
             <li>
