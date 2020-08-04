@@ -16,6 +16,8 @@ import FluxFitness from "./Projects Project/Products/FluxFitness";
 // Games
 import Rubato from "./Projects Project/Games/Rubato";
 // Miscellaneous
+import Website from "./Projects Project/Miscellaneous/Website";
+import Blog from "./Projects Project/Miscellaneous/Blog";
 import KeyDB from "./Projects Project/Miscellaneous/KeyDB";
 
 // TODO add side nav
@@ -53,6 +55,8 @@ const Projects = () => {
           </div>
           <h2>Miscellaneous</h2>
           <div className="project-group">
+            <Website />
+            <Blog />
             <KeyDB />
           </div>
         </div>

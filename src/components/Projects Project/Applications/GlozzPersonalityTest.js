@@ -11,17 +11,17 @@ const GlozzPersonalityTest = () => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://glozzpersonalitytest.herokuapp.com"
+            href="https://github.com/benjamin-shen/glozzpersonalitytest"
           >
-            Demo
+            Github
           </a>{" "}
           |{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/benjamin-shen/glozzpersonalitytest"
+            href="https://glozzpersonalitytest.herokuapp.com"
           >
-            Github
+            Demo
           </a>
           <p>
             "GLOZZ" stands for Glee Club and Chorus class of 2022. It's a friend
