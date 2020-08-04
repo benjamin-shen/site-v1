@@ -81,15 +81,9 @@ const AboutText = ({ mobile }) => {
           </a>
           , a Cornell Engineering project team that focuses on building software
           and giving back to the community. I'm a back-end developer for{" "}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://www.cornelldti.org/projects/flux/"
-          >
-            Flux
-          </a>
-          . I've been working throughout the summer to improve and adapt our
-          product to social distancing and unprecedented institutional policies.
+          <Link to="/projects/flux">Flux</Link>. I've been working throughout
+          the summer to improve and adapt our product to social distancing and
+          unprecedented institutional policies.
         </p>
         <p>
           I also enjoy singing in my free time. I sang in a high school choir

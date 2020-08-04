@@ -53,8 +53,16 @@ const Rubato = () => {
             backgrounds and parallax scrolling, cutscenes and chapter
             completion, tutorial tooltips, player states (run, jump, dash,
             attack, wall climb, wall slide, parry, death), and level
-            design/polish. You can download and demo the game (Windows or Mac)
-            or watch our gameplay trailers in the associated links.
+            design/polish. I also independently built the{" "}
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://pages.github.coecis.cornell.edu/glassboxgames/rubato-releases"
+            >
+              rubato-releases site
+            </a>
+            . Our codebase and documentation are private, but you can download
+            and demo the game (Windows or Mac) or watch our gameplay trailers.
           </p>
         </div>
       }

@@ -9,7 +9,7 @@
 }
 .react-router-modal__modal {
   min-width: 50% !important;
-  max-height: 600px;
+  max-height: 80%;
   overflow-y: auto;
 }
 
