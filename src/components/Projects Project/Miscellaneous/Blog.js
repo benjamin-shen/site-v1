@@ -23,9 +23,15 @@ const Blog = () => {
           >
             Website
           </a>
-          <p>Work in progress!</p>
+          <p>
+            This blog site is built with GatsbyJS and Contentful (a headless
+            CMS). Blog post data is pulled from Contentful using GraphQL. Pages
+            are generated dynamically from post slugs. The website is hosted on
+            Netlify.
+          </p>
         </div>
       }
+      wip={true}
     />
   );
 };

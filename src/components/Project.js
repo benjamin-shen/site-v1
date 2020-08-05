@@ -1,11 +1,12 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { ModalRoute } from "react-router-modal";
+import Emoji from "./Emoji";
 import "react-router-modal/css/react-router-modal.css";
 import "../styles/Project.css";
 import "../styles/ProjectModal.css";
 
-const ProjectModal = ({ title, content }) => {
+const ProjectModal = ({ title, content, wip }) => {
   const history = useHistory();
   const changeRoute = () => {
     history.push("/projects");
@@ -15,13 +16,21 @@ const ProjectModal = ({ title, content }) => {
       <i className="material-icons right x-icon" onClick={changeRoute}>
         close
       </i>
-      <h3>{title && title.toUpperCase()}</h3>
+      <h3>
+        {title && title.toUpperCase()} {wip && "(WIP)"}
+      </h3>
       {content || <p>More info coming soon!</p>}
+      {wip && (
+        <p>
+          This is still a work in progress! Please check back later{" "}
+          <Emoji symbol="😁" label="smile" />
+        </p>
+      )}
     </div>
   );
 };
 
-const Project = ({ title, description, content }) => {
+const Project = ({ title, description, content, wip }) => {
   const slug =
     title &&
     title
@@ -43,12 +52,16 @@ const Project = ({ title, description, content }) => {
       className="project z-depth-1 hoverable"
       onClick={changeRoute}
     >
-      <h3>{title && title.toUpperCase()}</h3>
+      <h3>
+        {title && title.toUpperCase()} {wip && "(WIP)"}
+      </h3>
       <p>{description}</p>
       <ModalRoute
         path={path}
         parentPath="/projects"
-        component={() => <ProjectModal title={title} content={content} />}
+        component={() => (
+          <ProjectModal title={title} content={content} wip={wip} />
+        )}
       />
     </div>
   );

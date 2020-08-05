@@ -50,7 +50,8 @@ const HomeText = () => {
         development. I also have experience in CRM and software development. I
         value friendships and I'm driven by people.{" "}
         <em>
-          See my <Link to="/about">About</Link> page for more about me.
+          See my <Link to="/about">About</Link> page or{" "}
+          <Link to="/resume">Resume</Link> for more information.
         </em>
       </p>
       <p>

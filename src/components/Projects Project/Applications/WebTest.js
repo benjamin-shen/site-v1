@@ -35,9 +35,9 @@ const WebTest = () => {
             This project is a tribute to my first Computer Science class at
             Stuyvesant High School (in Spring 2016). We learned basic Python
             scripting and HTML/CSS, and then were given the opportunity to
-            create any web project we could think of. I created an in-browser
-            testing system, with a text database and authentication system. I
-            built this with{" "}
+            create any web project we could think of. My friend Albert and I
+            created an in-browser testing system, with a text file database and
+            very basic authentication system. We built it with{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -45,7 +45,7 @@ const WebTest = () => {
             >
               CGI scripting
             </a>{" "}
-            in Python 2, with my good friend Albert.
+            in Python 2.
           </p>
           <p>
             I rewrote a significant portion of the code to be served by Python

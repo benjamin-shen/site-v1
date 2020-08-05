@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
 import Footer from "./Footer";
+import Emoji from "./Emoji";
 import "../styles/About.css";
 import headshot from "../assets/images/bfs45-transparent.png";
 
@@ -22,8 +23,7 @@ const AboutText = ({ mobile }) => {
         }
       >
         <p>
-          My full name is Benjamin Shen, but my friends call me Ben. I'm a
-          rising junior at{" "}
+          Hello world! I'm a rising junior at{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -39,7 +39,7 @@ const AboutText = ({ mobile }) => {
           >
             Computer Science
           </a>
-          . I like people, music, and food (in that order).
+          . Thanks for visiting my website. <Emoji symbol="😊" label="smile" />
         </p>
         <p>
           I was born and raised in New York City. My interests in technology

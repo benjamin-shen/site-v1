@@ -39,11 +39,6 @@ const App = () => {
           name="keywords"
           content="ben, benjamin, shen, ben shen, benjamin shen, website, freelance, developer, software, tech, technology, engineer, stem, computer science"
         />
-        <meta property="og:title" content="Benjamin Shen - Personal Website" />
-        <meta
-          property="og:description"
-          content="College Student, Developer, Singer, Learner."
-        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://benjaminshen.com" />
         <meta property="og:img" content={headshot} />
