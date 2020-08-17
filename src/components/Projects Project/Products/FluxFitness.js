@@ -62,7 +62,7 @@ const FluxFitness = () => {
             Firebase/GCP. I've contributed to the Vue front end, and built most
             of the back end. This includes the authentication, the serialized
             data flow from the form to the database collections, and the
-            spreadsheet generation for the export functionality. I work
+            spreadsheet generation for the export functionality. I worked
             primarily with the Firebase Realtime Database and Cloud Storage.
             This project has put on hold until Cornell can open their fitness
             facilities in NYS.

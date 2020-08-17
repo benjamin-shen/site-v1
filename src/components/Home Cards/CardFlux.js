@@ -50,7 +50,7 @@ const CardFlux = () => {
               >
                 campus-density-backend
               </a>{" "}
-              (<em>Flux mobile app back end in Node.js</em>)
+              (<em>Flux mobile app back end in Express.js</em>)
             </li>
             <li>
               <a

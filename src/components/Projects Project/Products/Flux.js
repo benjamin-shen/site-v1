@@ -74,7 +74,7 @@ const Flux = () => {
               Cornell Dining API
             </a>
             , improving the mobile app endpoints, and refactoring most of the
-            routes and queries. I work primarily with the Firebase Realtime
+            routes and queries. I worked primarily with the Firebase Realtime
             Database and Cloud Functions. We've been brainstorming and talking
             with Cornell this summer, asking to integrate OpenTable and
             considering other ideas related to dining reservations and queueing.
