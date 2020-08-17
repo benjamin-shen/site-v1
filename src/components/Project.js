@@ -49,7 +49,7 @@ const Project = ({ title, description, content, wip }) => {
   return (
     <div
       id={slug}
-      className="project z-depth-1 hoverable"
+      className={"project z-depth-1 hoverable" + (wip && " wip")}
       onClick={changeRoute}
     >
       <h3>

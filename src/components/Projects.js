@@ -6,9 +6,9 @@ import Footer from "./Footer";
 import "../styles/Projects.css";
 
 // Applications
+import Apt401B from "./Projects Project/Applications/Apt401B";
 import Dbot from "./Projects Project/Applications/Dbot";
 import GlozzPersonalityTest from "./Projects Project/Applications/GlozzPersonalityTest";
-import WebTest from "./Projects Project/Applications/WebTest";
 import Admissions2019 from "./Projects Project/Applications/Admissions2019";
 // Products
 import Flux from "./Projects Project/Products/Flux";
@@ -19,6 +19,7 @@ import Rubato from "./Projects Project/Games/Rubato";
 import Website from "./Projects Project/Miscellaneous/Website";
 import Blog from "./Projects Project/Miscellaneous/Blog";
 import KeyDB from "./Projects Project/Miscellaneous/KeyDB";
+import WebTest from "./Projects Project/Miscellaneous/WebTest";
 
 // TODO add side nav
 const Projects = () => {
@@ -39,9 +40,9 @@ const Projects = () => {
         <div className="projects-content">
           <h2>Applications</h2>
           <div className="project-group">
+            <Apt401B />
             <Dbot />
             <GlozzPersonalityTest />
-            <WebTest />
             <Admissions2019 />
           </div>
           <h2>Products</h2>
@@ -58,6 +59,7 @@ const Projects = () => {
             <Website />
             <Blog />
             <KeyDB />
+            <WebTest />
           </div>
         </div>
       </main>

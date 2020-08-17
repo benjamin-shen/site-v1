@@ -41,10 +41,9 @@ const Website = () => {
           </p>
           <p>
             I taught myself React, and developed this website over the course of
-            three weeks. I am now actively maintaining it, with potential plans
-            to migrate to NextJS or add pre-rendering for better SEO. Please{" "}
-            <Link to="/contact">contact me</Link> if you find any typos/bugs or
-            want to suggest improvements!
+            three weeks. I am now actively maintaining it and occasionally
+            updating its content. Please <Link to="/contact">contact me</Link>{" "}
+            if you find any typos/bugs or want to suggest improvements!
           </p>
         </div>
       }

@@ -69,6 +69,7 @@ const FluxFitness = () => {
           </p>
         </div>
       }
+      wip={true}
     />
   );
 };
