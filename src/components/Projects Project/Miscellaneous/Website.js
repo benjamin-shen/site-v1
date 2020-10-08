@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const Website = () => {
+const Website = ({ wip }) => {
   return (
     <Project
       title="Site-v1"
@@ -47,6 +47,7 @@ const Website = () => {
           </p>
         </div>
       }
+      wip={wip}
     />
   );
 };

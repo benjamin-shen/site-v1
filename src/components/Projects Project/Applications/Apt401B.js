@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Apt401B = () => {
+const Apt401B = ({ wip }) => {
   return (
     <Project
       title="Apt401B"
@@ -35,9 +35,9 @@ const Apt401B = () => {
             logs.
           </p>
           <p>
-            The app is built in React and Firebase/GCP. I used Firebase for its
-            hosting, authentication, cloud functions, and cloud firestore. I
-            send doorbell notifications using{" "}
+            The app is built with React and Firebase/GCP. It uses Firebase for
+            its hosting, authentication, cloud functions, and cloud firestore.
+            It sends doorbell notifications using{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -57,7 +57,7 @@ const Apt401B = () => {
           </p>
         </div>
       }
-      wip={true}
+      wip={wip}
     />
   );
 };

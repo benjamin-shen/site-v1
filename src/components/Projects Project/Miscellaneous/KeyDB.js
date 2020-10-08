@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const KeyDB = () => {
+const KeyDB = ({ wip }) => {
   return (
     <Project
       title="KeyDB"
@@ -90,6 +90,7 @@ const KeyDB = () => {
           </p>
         </div>
       }
+      wip={wip}
     />
   );
 };

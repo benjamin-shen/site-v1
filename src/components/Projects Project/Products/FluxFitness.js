@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const FluxFitness = () => {
+const FluxFitness = ({ wip }) => {
   return (
     <Project
       title="Flux Fitness"
@@ -54,8 +54,8 @@ const FluxFitness = () => {
             provide an interface to more easily submit and view data and
             analytics. Depending on when gyms can open publicly, our long-term
             goal is to integrate their equipment and crowdedness data into the{" "}
-            <Link to="./flux">Flux mobile apps</Link>. I've been working
-            full-stack on this project, along with 1-2 other developers on Flux.
+            <Link to="./flux">Flux mobile apps</Link>. I worked full-stack on
+            this project during my time on Flux.
           </p>
           <p>
             Flux Fitness is written with Vue/NodeJS and the project uses
@@ -64,12 +64,12 @@ const FluxFitness = () => {
             data flow from the form to the database collections, and the
             spreadsheet generation for the export functionality. I worked
             primarily with the Firebase Realtime Database and Cloud Storage.
-            This project has put on hold until Cornell can open their fitness
-            facilities in NYS.
+            This project has potential to transition to a reservation system for
+            Cornell Fitness.
           </p>
         </div>
       }
-      wip={true}
+      wip={wip}
     />
   );
 };

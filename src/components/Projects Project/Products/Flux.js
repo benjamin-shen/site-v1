@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const Flux = () => {
+const Flux = ({ wip }) => {
   return (
     <Project
       title="Flux"
@@ -39,7 +39,7 @@ const Flux = () => {
             [PR]
           </a>
           <p>
-            Flux is a mobile app for iOS and Android. I'm currently the sole
+            Flux is a mobile app for iOS and Android. Last year, I was the sole
             back-end developer for the{" "}
             <a
               rel="noopener noreferrer"
@@ -75,13 +75,14 @@ const Flux = () => {
             </a>
             , improving the mobile app endpoints, and refactoring most of the
             routes and queries. I worked primarily with the Firebase Realtime
-            Database and Cloud Functions. We've been brainstorming and talking
-            with Cornell this summer, asking to integrate OpenTable and
-            considering other ideas related to dining reservations and queueing.
+            Database and Cloud Functions. I have since transferred to{" "}
+            <Link to="./courseplan">Courseplan</Link>, but I'm still
+            contributing to Flux by onboarding/mentoring new backend developers
+            and reviewing PRs.
           </p>
         </div>
       }
-      wip={true}
+      wip={wip}
     />
   );
 };

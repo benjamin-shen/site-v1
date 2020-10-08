@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Dbot = () => {
+const Dbot = ({ wip }) => {
   return (
     <Project
       title="Dbot"
@@ -47,6 +47,7 @@ const Dbot = () => {
           </p>
         </div>
       }
+      wip={wip}
     />
   );
 };

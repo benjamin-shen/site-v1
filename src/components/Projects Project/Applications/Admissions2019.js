@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Admissions2019 = () => {
+const Admissions2019 = ({ wip }) => {
   return (
     <Project
       title="Admissions2019"
@@ -60,6 +60,7 @@ const Admissions2019 = () => {
           </p>
         </div>
       }
+      wip={wip}
     />
   );
 };

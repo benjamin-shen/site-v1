@@ -16,7 +16,9 @@ const UnderDevelopment = (props) => {
         <br />
         <button
           className="btn waves-effect z-depth-2 transparent black-text"
-          onClick={() => props.history.goBack()}
+          onClick={() => {
+            props.history.goBack();
+          }}
         >
           Go Back
         </button>

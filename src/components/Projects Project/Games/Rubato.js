@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Rubato = () => {
+const Rubato = ({ wip }) => {
   return (
     <Project
       title="Rubato"
@@ -66,6 +66,7 @@ const Rubato = () => {
           </p>
         </div>
       }
+      wip={wip}
     />
   );
 };
