@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const FluxFitness = ({ wip }) => {
+const FluxFitness = ({ tags }) => {
   return (
     <Project
       title="Flux Fitness"
@@ -69,7 +69,7 @@ const FluxFitness = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

@@ -6,11 +6,12 @@ import "react-router-modal/css/react-router-modal.css";
 import "../styles/Project.css";
 import "../styles/ProjectModal.css";
 
-const ProjectModal = ({ title, content, wip }) => {
+const ProjectModal = ({ title, content, tags }) => {
   const history = useHistory();
   const changeRoute = () => {
     history.push("/projects");
   };
+  const wip = tags.includes("wip");
   return (
     <div className="project-modal">
       <i className="material-icons right x-icon" onClick={changeRoute}>
@@ -30,7 +31,7 @@ const ProjectModal = ({ title, content, wip }) => {
   );
 };
 
-const Project = ({ title, description, content, wip }) => {
+const Project = ({ title, description, content, tags }) => {
   const slug =
     title &&
     title
@@ -46,6 +47,7 @@ const Project = ({ title, description, content, wip }) => {
   const changeRoute = () => {
     history.push(path);
   };
+  const wip = tags.includes("wip");
   return (
     <div
       id={slug}
@@ -60,7 +62,7 @@ const Project = ({ title, description, content, wip }) => {
         path={path}
         parentPath="/projects"
         component={() => (
-          <ProjectModal title={title} content={content} wip={wip} />
+          <ProjectModal title={title} content={content} tags={tags || []} />
         )}
       />
     </div>

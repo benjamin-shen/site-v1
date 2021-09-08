@@ -1,10 +1,10 @@
 import React from "react";
 import Project from "../../Project";
 
-const Apt401B = ({ wip }) => {
+const Apt401B = ({ tags }) => {
   return (
     <Project
-      title="Apt401B"
+      title="Apartment"
       description="Covid-19 App for Apartment Visitors"
       content={
         <div>
@@ -26,13 +26,12 @@ const Apt401B = ({ wip }) => {
           <p>
             In the era of a global pandemic, many students are wary of in-person
             house visits and socialization. Some of my friends and I discussed a
-            logging system for apartment visitors, for contact-tracing purposes
-            if someone got sick. I built this idea out into a more functional
-            apartment app, and made it open-source so anyone could deploy and
-            configure it on their own. Anyone can ring the doorbell without
-            signing in. Guests can create an account with a guest password and
-            view guest-related information. Housemates can edit notes and view
-            logs.
+            logging system for apartment visitors for contact-tracing purposes.
+            I built this idea out into a more functional apartment app, and made
+            it open-source so anyone could deploy and configure it on their own.
+            Anyone can ring the doorbell without signing in. Guests can create
+            an account with a guest password and view guest-related information.
+            Housemates can edit notes and view logs.
           </p>
           <p>
             The app is built with React and Firebase/GCP. It uses Firebase for
@@ -57,7 +56,7 @@ const Apt401B = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

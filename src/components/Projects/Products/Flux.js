@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const Flux = ({ wip }) => {
+const Flux = ({ tags }) => {
   return (
     <Project
       title="Flux"
@@ -39,8 +38,8 @@ const Flux = ({ wip }) => {
             [PR]
           </a>
           <p>
-            Flux is a mobile app for iOS and Android. Last year, I was the sole
-            back-end developer for the{" "}
+            Flux is a mobile app for iOS and Android. I was a backend developer
+            for the{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -48,7 +47,7 @@ const Flux = ({ wip }) => {
             >
               Flux subteam
             </a>{" "}
-            (previously Campus Density) on{" "}
+            on{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -56,11 +55,9 @@ const Flux = ({ wip }) => {
             >
               Cornell DTI
             </a>
-            . Our last major release, we focused on interpolating dining hall
-            densities from swipe data and displaying relevant facility
-            information (like open hours and historical density data). For our
-            new release, we've added menus and started working on adding{" "}
-            <Link to="./flux-fitness">fitness facility densities</Link>.
+            . The app interpolates and predicts dining hall densities from swipe
+            data and displays relevant facility information (like open hours and
+            historical density data).
           </p>
           <p>
             Flux's back end is written in NodeJS and the project uses
@@ -75,14 +72,11 @@ const Flux = ({ wip }) => {
             </a>
             , improving the mobile app endpoints, and refactoring most of the
             routes and queries. I worked primarily with the Firebase Realtime
-            Database and Cloud Functions. I have since transferred to{" "}
-            <Link to="./courseplan">Courseplan</Link>, but I'm still
-            contributing to Flux by onboarding/mentoring new backend developers
-            and reviewing PRs.
+            Database and Cloud Functions.
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

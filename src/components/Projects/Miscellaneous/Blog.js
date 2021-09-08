@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Blog = ({ wip }) => {
+const Blog = ({ tags }) => {
   return (
     <Project
       title="Blog"
@@ -31,7 +31,7 @@ const Blog = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

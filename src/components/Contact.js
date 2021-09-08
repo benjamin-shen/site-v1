@@ -14,7 +14,6 @@ const siteKey = dev
 
 const emailText = "benjaminshen22@gmail.com";
 const emailAddress = "benjaminshen22+website@gmail.com";
-const phone = "(917) 719-0520";
 
 const Form = () => {
   useEffect(() => {
@@ -80,7 +79,6 @@ const Contact = () => {
               {emailText}
             </a>
           </p>
-          <p>{phone}</p>
           <Form />
         </div>
       </main>

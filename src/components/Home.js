@@ -5,8 +5,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "../styles/Card.css";
 import "../styles/Home.css";
-import CardGlozz from "./Home Cards/CardGlozz";
-import CardFlux from "./Home Cards/CardFlux";
+import CardSinging from "./Home Cards/CardSinging";
+import CardDTI from "./Home Cards/CardDTI";
 
 export const Card = ({ image, title, description, info }) => {
   return (
@@ -46,17 +46,16 @@ const HomeText = () => {
     <div>
       <h2>Hey, I'm Ben!</h2>
       <p>
-        I'm a college student who's interested in web, app, and game
-        development. I also have experience in CRM and software development. I
-        value friendships and I'm driven by people.{" "}
+        I'm a final-semester undergraduate student who's interested in computer
+        science and software development. In academia, I'm drawn to Game Design,
+        Computer Graphics, and Machine Learning.{" "}
         <em>
           See my <Link to="/about">About</Link> page or{" "}
           <Link to="/resume">Resume</Link> for more information.
         </em>
       </p>
       <p>
-        Check out some of my project topics below! Click the cards for more
-        info.{" "}
+        Check out some of my activities below! Click the cards for more info.{" "}
         <em>
           Check out my <Link to="projects">Projects</Link> page for a larger
           collection of my work.
@@ -85,8 +84,8 @@ const Home = () => {
       <main className="container">
         <HomeText />
         <div id="cards" className="center">
-          <CardGlozz />
-          <CardFlux />
+          <CardDTI />
+          <CardSinging />
         </div>
       </main>
       <Footer />

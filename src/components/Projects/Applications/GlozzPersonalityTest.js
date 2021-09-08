@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const GlozzPersonalityTest = ({ wip }) => {
+const GlozzPersonalityTest = ({ tags }) => {
   return (
     <Project
       title="Glozz Personality Test"
@@ -47,7 +47,7 @@ const GlozzPersonalityTest = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const Website = ({ wip }) => {
+const Website = ({ tags }) => {
   return (
     <Project
       title="Site-v1"
@@ -26,10 +26,10 @@ const Website = ({ wip }) => {
           </a>
           <p>
             You are currently viewing this project! This website is built with
-            ReactJS as a front-end framework. It uses some styling and
-            components from Materialize CSS. I initially used Firebase Hosting
-            for web hosting, but I changed to Netlify for its continuous
-            deployment from Github. I am currently using the custom domain{" "}
+            React. It uses some styling and components from Materialize CSS. I
+            initially used Firebase Hosting for web hosting, but I changed to
+            Netlify for its continuous deployment from Github. I am currently
+            using the custom domain{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -47,7 +47,7 @@ const Website = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Rubato = ({ wip }) => {
+const Rubato = ({ tags }) => {
   return (
     <Project
       title="Rubato"
@@ -11,24 +11,24 @@ const Rubato = ({ wip }) => {
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="https://pages.github.coecis.cornell.edu/glassboxgames/rubato-releases"
+            href="https://github.com/glassboxgames/rubato/"
           >
-            Pages
+            Github
           </a>{" "}
           |{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
-            href="http://en-ci-gdiac.coecis.cornell.edu/gallery/rubato"
+            href="https://glassboxgames.github.io/rubato-releases/"
           >
-            GDIAC
+            Releases
           </a>
           <p>
             Rubato is a 2D side-view combat platformer with clean controls and
             an immersive narrative. The player controls Adagio, whose main
             mechanic is being able to "steal" time back from enemies and freeze
             them in the environment. This lends itself to puzzle and action
-            sections, both requiring precise movement to advance. I was mainly a
+            sections, both requiring precise movement to advance. I was a
             programmer in Glassbox Games, an eight-student team in the{" "}
             <a
               rel="noopener noreferrer"
@@ -66,7 +66,7 @@ const Rubato = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const WebTest = ({ wip }) => {
+const WebTest = ({ tags }) => {
   return (
     <Project
       title="Web Test"
@@ -72,7 +72,7 @@ const WebTest = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

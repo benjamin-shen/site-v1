@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const CornellZoomHub = ({ wip }) => {
+const CornellZoomHub = ({ tags }) => {
   return (
     <Project
       title="Cornell Zoom Hub"
@@ -68,7 +68,7 @@ const CornellZoomHub = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

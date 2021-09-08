@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const Way = ({ wip }) => {
+const Way = ({ tags }) => {
   return (
     <Project
       title="Way"
@@ -28,7 +28,7 @@ const Way = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

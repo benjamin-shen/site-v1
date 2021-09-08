@@ -1,7 +1,7 @@
 import React from "react";
 import Project from "../../Project";
 
-const CoursePlan = ({ wip }) => {
+const CoursePlan = ({ tags }) => {
   return (
     <Project
       title="CoursePlan"
@@ -45,7 +45,7 @@ const CoursePlan = ({ wip }) => {
           </p>
         </div>
       }
-      wip={wip}
+      tags={tags || []}
     />
   );
 };

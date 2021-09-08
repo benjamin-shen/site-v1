@@ -23,7 +23,7 @@ const AboutText = ({ mobile }) => {
         }
       >
         <p>
-          Hello world! I'm a rising junior at{" "}
+          Hello world! I'm a student at{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -38,6 +38,14 @@ const AboutText = ({ mobile }) => {
             href="https://www.cs.cornell.edu"
           >
             Computer Science
+          </a>{" "}
+          and minoring in{" "}
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://infosci.cornell.edu"
+          >
+            Information Science
           </a>
           . Thanks for visiting my website. <Emoji symbol="😊" label="smile" />
         </p>
@@ -67,8 +75,8 @@ const AboutText = ({ mobile }) => {
           </a>{" "}
           are relatively broad, ranging from Medicine to Physics to Computer
           Science. I love to learn about new fields; within Engineering CS, I'm
-          particularly interested in Robotics, Machine Learning, and
-          Cybersecurity. I'm also dabbling in Game Design/Development.
+          particularly interested in Game Design, Computer Graphics, and Machine
+          Learning.
         </p>
         <p>
           Outside of academics, I'm part of{" "}
@@ -80,14 +88,13 @@ const AboutText = ({ mobile }) => {
             Cornell DTI
           </a>
           , a Cornell Engineering project team that focuses on building software
-          and giving back to the community. I'm a back-end developer for{" "}
-          <Link to="/projects/flux">Flux</Link>. I've been working throughout
-          the summer to improve and adapt our product to social distancing and
-          unprecedented institutional policies.
+          and giving back to the community. I've worked on projects like{" "}
+          <Link to="/projects/courseplan">CoursePlan</Link> and{" "}
+          <Link to="/projects/flux">Flux</Link>.
         </p>
         <p>
           I also enjoy singing in my free time. I sang in a high school choir
-          and was president of my a cappella group; now I'm singing in the{" "}
+          and was president of my a cappella group; in college, I sang in the{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -103,21 +110,11 @@ const AboutText = ({ mobile }) => {
           >
             The Chordials
           </a>
-          . I try to give back to these groups by doing publicity work. If you
-          like a cappella music, you should check out The Chordials'
-          recently-released album{" "}
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://open.spotify.com/album/5A1S6RL7eUzwhTHMzETDT8"
-          >
-            <em>Fire &amp; Concrete</em>
-          </a>
-          !
+          .
         </p>
         <p>
-          My other hobbies include cooking, photography, tennis, exploring
-          nature, and playing videogames. My favorite game is{" "}
+          My other hobbies include tennis, food, nature, and video games. My
+          favorite game is{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -125,18 +122,15 @@ const AboutText = ({ mobile }) => {
           >
             Celeste
           </a>
-          , my favorite food is the egg tart, and my favorite summertime drink
-          is iced tea. My dislikes include driving long distances, filing taxes,
-          and watching movies with rushed endings.
+          , my favorite food is egg tart, and my favorite summertime drink is
+          iced tea.
         </p>
         <p>
-          I'm currently a full-time student with a part-time job, but I'm always
-          looking for new opportunities in the tech field. You can view my{" "}
+          If you are a recruiter, you can view my{" "}
           <Link to="/resume">Resume</Link> or{" "}
-          <Link to="/projects">Projects</Link> to see if I'm a good fit for you.
-          If you have freelance/startup work or just want to chat with a
-          developer, you can <Link to="/contact">Contact</Link> me and I'd love
-          to talk!
+          <Link to="/projects">Projects</Link> to see if we might be a good fit.
+          If you want to have a coffee chat, you can{" "}
+          <Link to="/contact">Contact</Link> me and I'd love to talk!
         </p>
       </div>
     </div>
