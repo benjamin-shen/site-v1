@@ -60,7 +60,8 @@ const CornellZoomHub = ({ tags }) => {
             >
               Hack Our Campus
             </a>
-            , a virtual hackathon based in Cornell.
+            , a virtual hackathon based in Cornell, where we placed as
+            finalists.
           </p>
           <p>
             The app is built with React and Firebase/GCP. It uses Firebase for

@@ -19,7 +19,8 @@ import Way from "./Projects/Products/Way";
 import Rubato from "./Projects/Games/Rubato";
 import Ghosted from "./Projects/Games/Ghosted";
 // Miscellaneous
-import Website from "./Projects/Miscellaneous/Website";
+import SiteV1 from "./Projects/Miscellaneous/SiteV1";
+import SiteV2 from "./Projects/Miscellaneous/SiteV2";
 import Blog from "./Projects/Miscellaneous/Blog";
 import KeyDB from "./Projects/Miscellaneous/KeyDB";
 import WebTest from "./Projects/Miscellaneous/WebTest";
@@ -49,11 +50,11 @@ const Projects = () => {
           </div>
           <h2>Products</h2>
           <div className="project-group">
-            <CornellZoomHub tags={["wip"]} />
-            <CoursePlan tags={["wip"]} />
+            <CornellZoomHub />
+            <CoursePlan />
             <Flux />
             <FluxFitness />
-            <Way tags={["wip"]} />
+            <Way />
           </div>
           <h2>Games</h2>
           <div className="project-group">
@@ -62,7 +63,8 @@ const Projects = () => {
           </div>
           <h2>Miscellaneous</h2>
           <div className="project-group">
-            <Website />
+            <SiteV1 />
+            <SiteV2 tags={["wip"]} />
             <Blog tags={["wip"]} />
             <KeyDB />
             <WebTest />

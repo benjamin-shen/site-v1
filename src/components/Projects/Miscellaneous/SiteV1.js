@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Project from "../../Project";
 
-const Website = ({ tags }) => {
+const SiteV1 = ({ tags }) => {
   return (
     <Project
       title="Site-v1"
@@ -52,4 +52,4 @@ const Website = ({ tags }) => {
   );
 };
 
-export default Website;
+export default SiteV1;

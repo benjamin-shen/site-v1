@@ -54,7 +54,7 @@ const FluxFitness = ({ tags }) => {
             provide an interface to more easily submit and view data and
             analytics. Depending on when gyms can open publicly, our long-term
             goal is to integrate their equipment and crowdedness data into the{" "}
-            <Link to="./flux">Flux mobile apps</Link>. I worked full-stack on
+            <Link to="./flux">Flux mobile apps</Link>. I worked full stack on
             this project during my time on Flux.
           </p>
           <p>

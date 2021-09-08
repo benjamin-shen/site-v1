@@ -30,18 +30,16 @@ const CardSinging = () => {
       info={
         <div>
           <p>
-            This is one of my biggest hobbies! Here I found a wonderful
-            community at Cornell, friends from various backgrounds but connected
-            by our love for singing.
+            Singing is one of my biggest hobbies outside of computer science! I
+            found wonderful singing communities at Stuyvesant and Cornell.
           </p>
           <p>
-            The Glee Club has been my motivation for many independent scripts and
-            projects. Major ones include:
+            The Glee Club has been my motivation for many projects, including:
           </p>
           <ul>
             <li>
-              <Link to="/projects/dbot">Dbot</Link>, a bot for our group chat on
-              Groupme.
+              <Link to="/projects/dbot">Dbot</Link>, a bot for the GLOZZ (Glee
+              Club and Chorus 2022) group chat on Groupme.
               <br />
               <em>Built with Python</em>
             </li>
@@ -49,8 +47,8 @@ const CardSinging = () => {
               <Link to="/projects/glozz-personality-test">
                 GLOZZ Personality Quiz
               </Link>
-              , a multiple-choice quiz to see which members of the group you are
-              most similar to. <br />
+              , a multiple-choice quiz to see similarity rankings with members
+              of GLOZZ. <br />
               <em>Built with Python and JavaScript</em>
             </li>
           </ul>

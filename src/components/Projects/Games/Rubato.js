@@ -61,8 +61,7 @@ const Rubato = ({ tags }) => {
             >
               rubato-releases site
             </a>
-            . Our codebase and documentation are private, but you can download
-            and demo the game (Windows or Mac) or watch our gameplay trailers.
+            .
           </p>
         </div>
       }

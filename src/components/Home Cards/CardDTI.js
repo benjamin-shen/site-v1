@@ -38,7 +38,8 @@ const CardDTI = () => {
             >
               Cornell Design &amp; Tech Initative
             </a>{" "}
-            at Cornell, as a developer for Flux and CoursePlan.
+            an Engineering project team that builds apps and software for the
+            community.
           </p>
           <p>
             I've learned a lot about app development from being on the team.
