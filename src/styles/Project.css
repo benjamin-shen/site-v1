@@ -5,16 +5,4 @@
   border-radius: 6px;
   position: relative;
   cursor: pointer;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(255, 255, 255),
-    rgb(242, 251, 255)
-  );
-}
-#projects .wip {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(255, 255, 255),
-    rgb(246, 242, 255)
-  );
 }

@@ -24,13 +24,8 @@ const Dbot = ({ tags }) => {
             practical (<code title="the next bus time">bus</code> and{" "}
             <code title="the current weather or weather forecast">weather</code>
             ) to quirky (
-            <code title="attempts to translate previous message(s)">
-              translate
-            </code>{" "}
-            and{" "}
-            <code title="reveals the true identity of the last sender">
-              identify
-            </code>
+            <code title="translation of previous message(s)">translate</code>{" "}
+            and <code title="true identity of the last sender">identify</code>
             ). Dbot also responds to keywords if it detects them in any
             messages. We have many inside jokes, and I attempt to bring humor
             and discussion through Dbot's (sometimes unexpected) responses.

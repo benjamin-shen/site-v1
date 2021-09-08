@@ -15,6 +15,9 @@
 #projects .projects-content {
   margin-bottom: 30px;
 }
+#projects .projects-description {
+  margin-bottom: 20px;
+}
 #projects .project-group {
   display: grid;
   place-items: center;
