@@ -1,33 +1,33 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { ModalContainer } from "react-router-modal";
-import Header from "./Header";
-import Footer from "./Footer";
-import "../styles/Projects.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import "styles/Projects.css";
 
-import { TAGS } from "./constants";
+import { TAGS } from "../../constants";
 
 // DTI
-import CoursePlan from "./Projects/DTI/CoursePlan";
-import Flux from "./Projects/DTI/Flux";
-import FluxFitness from "./Projects/DTI/FluxFitness";
+import CoursePlan from "../../Projects/DTI/CoursePlan";
+import Flux from "../../Projects/DTI/Flux";
+import FluxFitness from "../../Projects/DTI/FluxFitness";
 // Games
-import Ghosted from "./Projects/Games/Ghosted";
-import Rubato from "./Projects/Games/Rubato";
+import Ghosted from "../../Projects/Games/Ghosted";
+import Rubato from "../../Projects/Games/Rubato";
 // Glozz
-import Dbot from "./Projects/Glozz/Dbot";
-import GlozzPersonalityTest from "./Projects/Glozz/GlozzPersonalityTest";
+import Dbot from "../../Projects/Glozz/Dbot";
+import GlozzPersonalityTest from "../../Projects/Glozz/GlozzPersonalityTest";
 // Hackathon
-import CornellZoomHub from "./Projects/Hackathon/CornellZoomHub";
+import CornellZoomHub from "../../Projects/Hackathon/CornellZoomHub";
 // Miscellaneous
-import Blog from "./Projects/Miscellaneous/Blog";
-import SiteV1 from "./Projects/Miscellaneous/SiteV1";
-import SiteV2 from "./Projects/Miscellaneous/SiteV2";
+import Blog from "../../Projects/Miscellaneous/Blog";
+import SiteV1 from "../../Projects/Miscellaneous/SiteV1";
+import SiteV2 from "../../Projects/Miscellaneous/SiteV2";
 // Personal
-import Apartment from "./Projects/Personal/Apartment";
+import Apartment from "../../Projects/Personal/Apartment";
 // School
-import KeyDB from "./Projects/School/KeyDB";
-import WebTest from "./Projects/School/WebTest";
+import KeyDB from "../../Projects/School/KeyDB";
+import WebTest from "../../Projects/School/WebTest";
 
 const Projects = () => {
   useEffect(() => {

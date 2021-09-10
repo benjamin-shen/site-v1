@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Header from "./Header";
-import Footer from "./Footer";
-import Emoji from "./Emoji";
-import "../styles/About.css";
-import headshot from "../assets/images/bfs45-transparent.png";
+import Header from "../Header";
+import Footer from "../Footer";
+import Emoji from "../Emoji";
+import "styles/About.css";
+import headshot from "assets/images/bfs45-transparent.png";
 
 const cssShapes = {
   shapeOutside: "circle()",

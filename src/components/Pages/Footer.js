@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Footer.css";
-import bbt from "../assets/icons/bbt160.png";
-import github from "../assets/icons/github32.png";
-import linkedin from "../assets/icons/linkedin32.png";
+import "styles/Footer.css";
+import bbt from "assets/icons/bbt160.png";
+import github from "assets/icons/github32.png";
+import linkedin from "assets/icons/linkedin32.png";
 
 const BuyMeCoffee = () => {
   return (

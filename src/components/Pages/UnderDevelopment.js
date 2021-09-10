@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/UnderDevelopment.css";
-import logo from "../assets/promo/logo410x410.png";
+import "styles/UnderDevelopment.css";
+import logo from "assets/promo/logo410x410.png";
 
 const UnderDevelopment = (props) => {
   return (

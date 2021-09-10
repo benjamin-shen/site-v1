@@ -2,8 +2,8 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import { ModalRoute } from "react-router-modal";
 import "react-router-modal/css/react-router-modal.css";
-import "../styles/Project.css";
-import "../styles/ProjectModal.css";
+import "styles/Project.css";
+import "styles/ProjectModal.css";
 
 const ProjectModal = ({ title, content }) => {
   const history = useHistory();

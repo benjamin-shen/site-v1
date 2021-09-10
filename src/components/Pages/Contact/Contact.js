@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import loadjs from "loadjs";
-import Header from "./Header";
-import Footer from "./Footer";
-import "../styles/Form.css";
-import "../styles/Contact.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import "styles/Form.css";
+import "styles/Contact.css";
 
 const dev = false;
 

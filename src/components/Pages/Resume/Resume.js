@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import "../styles/Resume.css";
-import resume from "../assets/Benjamin Shen.pdf";
+import Header from "../Header";
+import Footer from "../Footer";
+import "styles/Resume.css";
+import resume from "assets/resume/Benjamin Shen.pdf";
 
 const Resume = () => {
   useEffect(() => {

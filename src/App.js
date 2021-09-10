@@ -3,18 +3,19 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-// import LandingPage from "./components/LandingPage";
-import HomePage from "./components/Home";
-import AboutPage from "./components/About";
-import ResumePage from "./components/Resume";
-import ProjectsPage from "./components/Projects";
-import ContactPage from "./components/Contact";
-import PageNotFound from "./components/PageNotFound";
-// import UnderDevelopment from "./components/UnderDevelopment";
+// import { LandingPage, UnderDevelopment } from "./components/Pages";
+import {
+  HomePage,
+  AboutPage,
+  ResumePage,
+  ProjectsPage,
+  ContactPage,
+  PageNotFound,
+} from "./components/Pages";
 
 import "./styles/App.css";
 
-import headshot from "./assets/images/bfs45-transparent.png";
+import headshot from "assets/images/bfs45-transparent.png";
 
 const App = () => {
   useEffect(() => {

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Header from "./Header";
-import Footer from "./Footer";
-import "../styles/Card.css";
-import "../styles/Home.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import "styles/Card.css";
+import "styles/Home.css";
 import CardSinging from "./Home Cards/CardSinging";
 import CardDTI from "./Home Cards/CardDTI";
 

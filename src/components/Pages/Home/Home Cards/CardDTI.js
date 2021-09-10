@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "../Home";
-import flux from "../../assets/images/flux.png";
+import flux from "assets/images/flux.png";
 
 const CardDTI = () => {
   return (

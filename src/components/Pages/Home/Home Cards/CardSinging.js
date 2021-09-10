@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "../Home";
-import glozz from "../../assets/images/glozz.jpg";
+import glozz from "assets/images/glozz.jpg";
 
 const CardSinging = () => {
   return (
