@@ -57,7 +57,7 @@ const Rubato = ({ tags }) => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://pages.github.coecis.cornell.edu/glassboxgames/rubato-releases"
+              href="https://glassboxgames.github.io/rubato-releases/"
             >
               rubato-releases site
             </a>
