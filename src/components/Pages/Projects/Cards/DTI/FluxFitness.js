@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const FluxFitness = ({ tags }) => {
   return (
@@ -52,10 +52,8 @@ const FluxFitness = ({ tags }) => {
             . Cornell's fitness facilities currently record occupancy data every
             thirty minutes by hand on spreadsheets; the goal of our app is to
             provide an interface to more easily submit and view data and
-            analytics. Depending on when gyms can open publicly, our long-term
-            goal is to integrate their equipment and crowdedness data into the{" "}
-            <Link to="./flux">Flux mobile apps</Link>. I worked full stack on
-            this project during my time on Flux.
+            analytics. I've contributed as a full stack developer on this
+            project during my time on <Link to="/projects/flux">Flux</Link>.
           </p>
           <p>
             Flux Fitness is written with Vue/NodeJS and the project uses

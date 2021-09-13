@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const CornellZoomHub = ({ tags }) => {
   return (
@@ -65,7 +65,8 @@ const CornellZoomHub = ({ tags }) => {
           </p>
           <p>
             The app is built with React and Firebase/GCP. It uses Firebase for
-            its hosting, authentication, and cloud firestore.{" "}
+            its hosting, authentication, and cloud firestore. I managed the
+            project, developed the app, and helped pitch the idea.
           </p>
         </div>
       }

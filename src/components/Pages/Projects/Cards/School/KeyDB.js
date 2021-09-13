@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const KeyDB = ({ tags }) => {
   return (
@@ -56,12 +56,12 @@ const KeyDB = ({ tags }) => {
             >
               Donal Lowsley-Williams
             </a>
-            ; unfortunately, our third partner dropped out relatively early. In
-            two-week sprints, we built a SQL database management system using a
-            text file system to store data. Users could interact with the DBMS
-            by inputting commands in a REPL, which were then lexed and parsed.
-            We developed the system from scratch, without any third-party
-            libraries.
+            ; unfortunately, our third partner dropped out early in the
+            semester. In two-week sprints, we built a SQL database management
+            system using a text file system to store data. Users could interact
+            with the DBMS by inputting commands in a REPL, which were then lexed
+            and parsed. We developed the system from scratch, without any
+            third-party libraries.
           </p>
           <p>
             A major focus of the project was designing the appropriate data

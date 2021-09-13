@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const Flux = ({ tags }) => {
   return (
@@ -38,8 +38,8 @@ const Flux = ({ tags }) => {
             [PR]
           </a>
           <p>
-            Flux is a mobile app for iOS and Android. I was a backend developer
-            for the{" "}
+            Flux is a mobile app for iOS and Android. I contributed as a backend
+            developer for the{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -61,8 +61,7 @@ const Flux = ({ tags }) => {
           </p>
           <p>
             Flux's back end is written in NodeJS and the project uses
-            Firebase/GCP. Things I've done on the back end include implementing
-            menus using the{" "}
+            Firebase/GCP. I've implemented menus using the{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -70,9 +69,8 @@ const Flux = ({ tags }) => {
             >
               Cornell Dining API
             </a>
-            , improving the mobile app endpoints, and refactoring most of the
-            routes and queries. I worked primarily with the Firebase Realtime
-            Database and Cloud Functions.
+            , improved the mobile app endpoints, and refactored most of the
+            routes and queries.
           </p>
         </div>
       }

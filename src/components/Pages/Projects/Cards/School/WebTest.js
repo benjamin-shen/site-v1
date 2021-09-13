@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const WebTest = ({ tags }) => {
   return (

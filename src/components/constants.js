@@ -1,4 +1,4 @@
-export const TAGS = {
+const TAGS = {
   COLLAB: {
     SOLO: "solo",
     TEAM: "team",
@@ -10,3 +10,5 @@ export const TAGS = {
     ORG: "org",
   },
 };
+
+export { TAGS };

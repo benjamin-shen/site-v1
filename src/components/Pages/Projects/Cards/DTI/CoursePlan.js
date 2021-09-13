@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const CoursePlan = ({ tags }) => {
   return (
@@ -32,7 +32,8 @@ const CoursePlan = ({ tags }) => {
           </a>
           <p>
             CoursePlan is a web app for students to easily plan their semester
-            courses and requirements. I was a full stack developer for the{" "}
+            courses and requirements. I contributed as a full stack developer
+            for the{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"
@@ -62,10 +63,11 @@ const CoursePlan = ({ tags }) => {
             support.
           </p>
           <p>
-            Flux is built with Vue/Vuex and Firebase. I worked primarily on
+            CoursePlan is built with Vue/Vuex and Firebase. I worked primarily on
             features like AP/IB credits, selectable requirements (for ambiguous
             fulfillments), and overriden requirements. I also improved the
-            requirements graph algorithm and contributed to the frontend UI/UX.
+            requirements graph algorithm and helped implement some of the
+            frontend UI/UX.
           </p>
         </div>
       }

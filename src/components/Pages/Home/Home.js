@@ -5,8 +5,8 @@ import Header from "../Header";
 import Footer from "../Footer";
 import "styles/Card.css";
 import "styles/Home.css";
-import CardSinging from "./Home Cards/CardSinging";
-import CardDTI from "./Home Cards/CardDTI";
+import CardSinging from "./Cards/Singing";
+import CardDTI from "./Cards/DTI";
 
 export const Card = ({ image, title, description, info }) => {
   return (

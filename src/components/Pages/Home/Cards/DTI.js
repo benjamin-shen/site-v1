@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card } from "../Home";
 import flux from "assets/images/flux.png";
 
-const CardDTI = () => {
+const DTI = () => {
   return (
     <Card
       image={flux}
@@ -71,4 +71,4 @@ const CardDTI = () => {
   );
 };
 
-export default CardDTI;
+export default DTI;

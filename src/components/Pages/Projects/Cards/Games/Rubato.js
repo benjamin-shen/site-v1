@@ -1,11 +1,11 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const Rubato = ({ tags }) => {
   return (
     <Project
       title="Rubato"
-      description="2D Combat Platformer with Time-Freeze Mechanic"
+      description="2D Combat Platformer Game with Time-Freeze Mechanic"
       content={
         <div>
           <a

@@ -7,27 +7,31 @@ import "styles/Projects.css";
 
 import { TAGS } from "../../constants";
 
+// Chordials
+import QCardScheduler from "./Cards/Chordials/QCardScheduler";
 // DTI
-import CoursePlan from "../../Projects/DTI/CoursePlan";
-import Flux from "../../Projects/DTI/Flux";
-import FluxFitness from "../../Projects/DTI/FluxFitness";
+import CoursePlan from "./Cards/DTI/CoursePlan";
+import Flux from "./Cards/DTI/Flux";
+import FluxFitness from "./Cards/DTI/FluxFitness";
 // Games
-import Ghosted from "../../Projects/Games/Ghosted";
-import Rubato from "../../Projects/Games/Rubato";
+import Ghosted from "./Cards/Games/Ghosted";
+import Rubato from "./Cards/Games/Rubato";
 // Glozz
-import Dbot from "../../Projects/Glozz/Dbot";
-import GlozzPersonalityTest from "../../Projects/Glozz/GlozzPersonalityTest";
+import Dbot from "./Cards/Glozz/Dbot";
+import GlozzPersonalityTest from "./Cards/Glozz/GlozzPersonalityTest";
 // Hackathon
-import CornellZoomHub from "../../Projects/Hackathon/CornellZoomHub";
+import CornellZoomHub from "./Cards/Hackathon/CornellZoomHub";
 // Miscellaneous
-import Blog from "../../Projects/Miscellaneous/Blog";
-import SiteV1 from "../../Projects/Miscellaneous/SiteV1";
-import SiteV2 from "../../Projects/Miscellaneous/SiteV2";
+import Blog from "./Cards/Miscellaneous/Blog";
+import SiteV1 from "./Cards/Miscellaneous/SiteV1";
+// import SiteV2 from "./Cards/Miscellaneous/SiteV2";
 // Personal
-import Apartment from "../../Projects/Personal/Apartment";
+import Apartment from "./Cards/Personal/Apartment";
 // School
-import KeyDB from "../../Projects/School/KeyDB";
-import WebTest from "../../Projects/School/WebTest";
+import KeyDB from "./Cards/School/KeyDB";
+import WebTest from "./Cards/School/WebTest";
+// Way
+import Way from "./Cards/Way/Way";
 
 const Projects = () => {
   useEffect(() => {
@@ -51,8 +55,8 @@ const Projects = () => {
           </p>
           <div className="project-group">
             <CoursePlan tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.ORG]} />
-            <SiteV2 tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.PERSONAL]} />
-            {/* <QCardScheduler tags={[TAGS.COLLAB.EXTERNAL, TAGS.PURPOSE.ORG]} /> */}
+            {/* <SiteV2 tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.PERSONAL]} /> */}
+            <QCardScheduler tags={[TAGS.COLLAB.EXTERNAL, TAGS.PURPOSE.ORG]} />
             {/* <Arrangers tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} /> */}
             {/* <Arrangements tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} /> */}
           </div>
@@ -71,8 +75,6 @@ const Projects = () => {
             <GlozzPersonalityTest tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} />
             <CornellZoomHub tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.PERSONAL]} />
             <SiteV1 tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.PERSONAL]} />
-            <WebTest tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.SCHOOL]} />
-            <KeyDB tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} />
             <Ghosted tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} />
             <Rubato tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} />
             {/* <Tetris3D tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} /> */}
@@ -83,17 +85,19 @@ const Projects = () => {
             <Apartment tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.PERSONAL]} />
             <Blog tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.PERSONAL]} />
           </div>
-          {/* <h2>Honorable Mentions</h2>
+          <h2>Honorable Mentions</h2>
           <p className="projects-description">
-            Projects that are less notable but deserve recognition
-          </p> */}
+            Some completed projects listed for posterity
+          </p>
           <div className="project-group">
+            <WebTest tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.SCHOOL]} />
+            <KeyDB tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} />
             {/* <UniversityInstagramData tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} /> */}
             {/* <RISCV tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.SCHOOL]} /> */}
             {/* <RayTracer tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} /> */}
             {/* <Rasterizer tags={[TAGS.COLLAB.TEAM, TAGS.PURPOSE.SCHOOL]} /> */}
             {/* <AdmissionsTesting tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} /> */}
-            {/* <Way tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} /> */}
+            <Way tags={[TAGS.COLLAB.SOLO, TAGS.PURPOSE.ORG]} />
           </div>
         </div>
       </main>

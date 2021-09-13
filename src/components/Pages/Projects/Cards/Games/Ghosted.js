@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const Rubato = ({ tags }) => {
   return (
@@ -48,7 +48,13 @@ const Rubato = ({ tags }) => {
             >
               CUGL
             </a>{" "}
-            (C++), Cornell's custom game engine. I also independently built the{" "}
+            (C++), Cornell's custom game engine. I designed the game's
+            architecture, managed the programming team (creating, assigning,
+            helping with tasks), made versioned releases, and led the
+            development of the game. I implemented the multiplayer networking,
+            drawing/graphics, game mode logic, player movement and states, and
+            main player mechanics (trap, spook, unspook). I also independently
+            built the{" "}
             <a
               rel="noopener noreferrer"
               target="_blank"

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Project from "../../Pages/Projects/Project";
+import Project from "../../Project";
 
 const SiteV1 = ({ tags }) => {
   return (

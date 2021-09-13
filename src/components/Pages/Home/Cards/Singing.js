@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Card } from "../Home";
 import glozz from "assets/images/glozz.jpg";
 
-const CardSinging = () => {
+const Singing = () => {
   return (
     <Card
       image={glozz}
@@ -58,4 +58,4 @@ const CardSinging = () => {
   );
 };
 
-export default CardSinging;
+export default Singing;
