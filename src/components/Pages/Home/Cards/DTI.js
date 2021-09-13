@@ -37,13 +37,13 @@ const DTI = () => {
               href="https://www.cornelldti.org"
             >
               Cornell Design &amp; Tech Initative
-            </a>{" "}
-            an Engineering project team that builds apps and software for the
+            </a>
+            , an Engineering project team that builds apps and software for the
             community.
           </p>
           <p>
-            I've learned a lot about app development from being on the team.
-            Here are some of the projects I've contributed to:
+            I've learned a lot about app development and design from the
+            projects I've worked on, such as:
           </p>
           <ul>
             <li>
