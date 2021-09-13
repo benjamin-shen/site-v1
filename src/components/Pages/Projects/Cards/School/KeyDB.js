@@ -5,7 +5,7 @@ const KeyDB = ({ tags }) => {
   return (
     <Project
       title="KeyDB"
-      description="OCaml-based Text DBMS"
+      description="OCaml DBMS"
       content={
         <div>
           <a

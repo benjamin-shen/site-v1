@@ -110,10 +110,7 @@ const AboutText = ({ mobile }) => {
           >
             The Chordials
           </a>
-          .
-        </p>
-        <p>
-          My other hobbies include tennis, food, nature, and video games. My
+          . My other hobbies include tennis, food, nature, and video games. My
           favorite game is{" "}
           <a
             rel="noopener noreferrer"

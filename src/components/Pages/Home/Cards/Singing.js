@@ -49,7 +49,20 @@ const Singing = () => {
               </Link>
               , a multiple-choice quiz to see similarity rankings with members
               of GLOZZ. <br />
-              <em>Built with Python and JavaScript</em>
+              <em>Built with JavaScript and Python</em>
+            </li>
+          </ul>
+          <p>
+            I'm currently working on a few projects for The Chordials, such as:
+          </p>
+          <ul>
+            <li>
+              <Link to="/projects/quarter-card-scheduler">
+                Quarter Card Scheduler
+              </Link>
+              , a flow-based scheduler for distributing quarter cards.
+              <br />
+              <em>Built with React, Firebase, and Python</em>
             </li>
           </ul>
         </div>
