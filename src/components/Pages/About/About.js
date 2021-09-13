@@ -51,7 +51,7 @@ const AboutText = ({ mobile }) => {
         </p>
         <p>
           I was born and raised in New York City. My interests in technology
-          began as a kid and followed me through{" "}
+          started as a kid and followed me through{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -59,10 +59,9 @@ const AboutText = ({ mobile }) => {
           >
             Stuyvesant
           </a>
-          , a large specialized high school in Downtown Manhattan. My favorite
-          subject was math, until I took my first Intro to Computer Science
-          class. Ever since, I've been drawn to the potential that my code could
-          make the world a happier place.
+          , a large specialized high school in Downtown Manhattan. I've always
+          been drawn to the potential that my code could make the world a better
+          place.
         </p>
         <p>
           My academic interests in the{" "}
@@ -73,8 +72,8 @@ const AboutText = ({ mobile }) => {
           >
             College of Engineering
           </a>{" "}
-          are relatively broad, ranging from Medicine to Physics to Computer
-          Science. I love to learn about new fields; within Engineering CS, I'm
+          are broad, ranging from Medicine to Physics to Computer Science. I
+          love to learn about new fields; within Engineering CS, I'm
           particularly interested in Game Design, Computer Graphics, and Machine
           Learning.
         </p>
@@ -90,11 +89,13 @@ const AboutText = ({ mobile }) => {
           , a Cornell Engineering project team that focuses on building software
           and giving back to the community. I've worked on projects like{" "}
           <Link to="/projects/courseplan">CoursePlan</Link> and{" "}
-          <Link to="/projects/flux">Flux</Link>.
+          <Link to="/projects/flux">Flux</Link>. I also work on personal
+          projects in my free time; you can view some of them in the{" "}
+          <Link to="/projects">Projects</Link> tab.
         </p>
         <p>
-          I also enjoy singing in my free time. I sang in a high school choir
-          and was president of my a cappella group; in college, I sang in the{" "}
+          I also really enjoy singing. I sang in a high school choir and was
+          president of my a cappella group; in college, I sang in the{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -124,9 +125,8 @@ const AboutText = ({ mobile }) => {
         </p>
         <p>
           If you are a recruiter, you can view my{" "}
-          <Link to="/resume">Resume</Link> or{" "}
-          <Link to="/projects">Projects</Link> to see if we might be a good fit.
-          If you want to have a coffee chat, you can{" "}
+          <Link to="/resume">Resume</Link> to see if we might be a good fit. If
+          you want to have a coffee chat, you can{" "}
           <Link to="/contact">Contact</Link> me and I'd love to talk!
         </p>
       </div>
