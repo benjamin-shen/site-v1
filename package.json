@@ -8,8 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "firebase": "^7.16.0",
     "loadjs": "^4.2.0",
-    "node-sass": "^7.0.0",
-    "react": "^16.13.1",
+    "react": "^18.1.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-materialize": "^3.9.2",
@@ -37,5 +36,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.52.3"
   }
 }
