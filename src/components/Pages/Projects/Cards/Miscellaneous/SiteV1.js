@@ -40,10 +40,9 @@ const SiteV1 = ({ tags }) => {
             with Cloudflare as a DNS hosting provider.
           </p>
           <p>
-            I taught myself React, and developed this website over the course of
-            three weeks. I am now actively maintaining it and occasionally
-            updating its content. Please <Link to="/contact">contact me</Link>{" "}
-            if you find any typos/bugs or want to suggest improvements!
+            This project is my first (self-taught) React project. I am no longer
+            maintaining it. Please <Link to="/contact">contact me</Link> if you
+            find any typos/bugs or want to suggest improvements!
           </p>
         </div>
       }

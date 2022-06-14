@@ -46,16 +46,17 @@ const HomeText = () => {
     <div>
       <h2>Hey, I'm Ben!</h2>
       <p>
-        I'm a final-semester undergraduate student who's interested in computer
-        science and software development. In academia, I'm drawn to Game Design,
-        Computer Graphics, and Machine Learning.{" "}
+        I'm a lifelong learner who's interested in computer science and software
+        development. I'm particularly drawn to Machine Learning, Game Design,
+        Computer Graphics, and Compiler Design.
+      </p>
+      <p>
         <em>
           See my <Link to="/about">About</Link> page or{" "}
           <Link to="/resume">Resume</Link> for more information.
         </em>
       </p>
       <p>
-        Check out some of my activities below! Click the cards for more info.{" "}
         <em>
           Check out my <Link to="projects">Projects</Link> page for a larger
           collection of my work.

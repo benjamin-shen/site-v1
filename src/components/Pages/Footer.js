@@ -113,7 +113,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-copyright center-align">
-          <div className="container">© 2021 Benjamin Shen</div>
+          <div className="container">© 2022 Benjamin Shen</div>
         </div>
       </div>
     </footer>

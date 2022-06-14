@@ -23,15 +23,15 @@ const AboutText = ({ mobile }) => {
         }
       >
         <p>
-          Hello world! I'm a student at{" "}
+          Hello world! I'm a recent graduate of{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="https://www.cornell.edu"
           >
-            Cornell University
+            Cornell University.
           </a>{" "}
-          majoring in{" "}
+          I majored in{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -39,7 +39,7 @@ const AboutText = ({ mobile }) => {
           >
             Computer Science
           </a>{" "}
-          and minoring in{" "}
+          and minored in{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -73,9 +73,7 @@ const AboutText = ({ mobile }) => {
             College of Engineering
           </a>{" "}
           are broad, ranging from Medicine to Physics to Computer Science. I
-          love to learn about new fields; within Engineering CS, I'm
-          particularly interested in Game Design, Computer Graphics, and Machine
-          Learning.
+          love to learn about new fields.
         </p>
         <p>
           Outside of academics, I'm part of{" "}
@@ -89,13 +87,11 @@ const AboutText = ({ mobile }) => {
           , a Cornell Engineering project team that focuses on building software
           and giving back to the community. I've worked on projects like{" "}
           <Link to="/projects/courseplan">CoursePlan</Link> and{" "}
-          <Link to="/projects/flux">Flux</Link>. I also work on personal
-          projects in my free time; you can view some of them in the{" "}
-          <Link to="/projects">Projects</Link> tab.
+          <Link to="/projects/flux">Flux</Link>.
         </p>
         <p>
           I also really enjoy singing. I sang in a high school choir and was
-          president of my a cappella group; in college, I sang in the{" "}
+          president of my a cappella group. In college, I sang in the{" "}
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -124,10 +120,8 @@ const AboutText = ({ mobile }) => {
           iced tea.
         </p>
         <p>
-          If you are a recruiter, you can view my{" "}
-          <Link to="/resume">Resume</Link> to see if we might be a good fit. If
-          you want to have a coffee chat, you can{" "}
-          <Link to="/contact">Contact</Link> me and I'd love to talk!
+          If you would like to have a coffee chat, please{" "}
+          <Link to="/contact">Contact</Link> me!
         </p>
       </div>
     </div>
